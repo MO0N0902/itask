@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #D96073;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.header .search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.header .search img {
+    width: 30px;
+    height: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.header .admin {
+    text-align: right;
+    font-size: 14px;
+}
+
+.header .admin a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .admin a:hover {
+    text-decoration: underline;
+}
+
+.nav-bar {
+    background-color: #D96073;
+    padding: 20px 20px;
+}
+
+.nav-bar .nav {
+    display: flex;
+    justify-content: left;
+}
+
+.nav-bar .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.sub-menu {
+    background-color: #AC394B;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    color: #DFDFDF;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.sub-nav {
+    justify-content: left;
+    margin-bottom: 20px; 
+    
+}
+
+.sub-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    justify-content: left;
+}
+
+.sub-nav ul li {
+    margin: 5px 0;
+}
+
+.sub-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-nav ul li a:hover {
+    text-decoration: underline;
+}
