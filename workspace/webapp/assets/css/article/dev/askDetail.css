@@ -77,3 +77,36 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
+.Detail-content{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2a2a2;
+  padding: 20px;
+  width: 800px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+#Detail-moniter-img{
+  height: 30px;
+  width: 30px;
+}
+#Detail-monitercount, #Detail-viewcount, #Detail-sharecount{
+  font-size: 30px;
+  padding-left: 20px;
+}
+#Detail-share-img, #Detail-view-img{
+  height: 30px;
+  width: 35px;
+  padding-left: 100px;
+}
+.commen-content{
+  display: flex;
+  justify-items: center;
+  width: 1200px;
+}
+.comment-count{
+  font-size: 30px;
+  font-weight: bold;
+}

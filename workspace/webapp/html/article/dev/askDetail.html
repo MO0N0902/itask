@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>개발 게시글 상서페이지</title>
   <link rel="stylesheet" href="./../../../assets/css/article/dev/askDetail.css">
   <script defer src="./../../../assets/js/article/dev/askDetail.js"></script>
 </head>
@@ -31,19 +31,38 @@
         <button class="bjs-category-btn">꿀팁</button>
       </div>
     </div>
+  </main>
     <div class="mjh-noticeDetail-articel-title">
-      <div id="category">전체</div>
-      <div id="title">사이트 점검 안내✴</div>
+      <div id="title">간격설정 어떻게 하나요..??</div>
+      <div id="userprofile"><img src="" alt=""></div>
+      <div id="article-text">html 작성하는중인데 간격이4칸이라 너무 멀리떨어지네요
+        줄일수 있는 방법 있나요?
+      </div>
+      <div class="Detail-content">
+        <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
+        <span id="Detail-monitercount">0</span>
+        <img src="./../../../assets/img/view.png" alt="조회수" id = "Detail-view-img">
+        <span id="Detail-viewcount">0</span>
+        <img src="./../../../assets/img/share.png" alt="공유유수" id = "Detail-share-img">
+        <span id="Detail-sharecount">0</span>
+        <img src="./../../../assets/img/Container.png" alt="수정삭제버튼" id = "Detail-container">
+      </div>
     </div>
+    <div class="mjh-askDetail-comment-content">
     <!-- 댓글수수 -->
-    <div class="comment-count">총 댓글 수: <span id="comment-count">0</span></div>
+      <div class="comment-count">댓글  <span id="comment-count">0</span></div>
     <!-- 댓글 작성 공간간 -->
-    <div>
       <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
       <button onclick="addComment()">올리기</button>
     </div>
     <!-- 댓글 리스트트 -->
-    <div id="comment-section">dsaasddsfafsd</div>
-  </main>
+    <div class="comment-content">
+      <img src="./../../../assets/img/moniter.png" alt="모니터" id = "moniter-up">
+      <div>username</div>
+      <img src="./../../../assets/img/Container.png" alt="설정" id = >
+      <div id="comment-section"></div>
+      <img src="./../../../assets/img/moniter.png" alt="" id = "mjh-askDetail-container">
+      <span id="mjh-noticeDetail-count">0</span>
+    </div>
 </body>
 </html>
