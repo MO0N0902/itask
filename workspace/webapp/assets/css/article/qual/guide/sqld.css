@@ -23,7 +23,7 @@ header {
 }
 
 /* 디데이 담기는 박스 */
-.lch-infoPro-day{
+.lch-sqld-day{
   border: 1px solid #D96073;
   background-color: white;
   width: 100%;
@@ -35,7 +35,7 @@ header {
 }
 
 /* 디데이 박스 너비 설정 */
-.lch-infoPro-day-show{
+.lch-sqld-day-show{
   width: 1200px;
   height: 100%;
   display: flex;
@@ -43,7 +43,7 @@ header {
 }
 
 /* main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) */
-.lch-infoPro-elements {
+.lch-sqld-elements {
   width: 1200px;
   height: 100%;
   display: flex;
@@ -53,19 +53,19 @@ header {
 }
 
 /* 자격증 큰 글씨 */
-.lch-infoPro-title {
+.lch-sqld-title {
   font-size: 50px;
   margin: 50px;
 }
 
 /* 자격증 태그 버튼 담은 박스 */
-.lch-infoPro-tag {
+.lch-sqld-tag {
   display: flex;
   justify-content: center;
 }
 
 /* 자격증 태그 버튼 */
-.lch-infoPro-tag-btn {
+.lch-sqld-tag-btn {
   border: 1px solid #D96073;
   background: none;
   width: 170px;
@@ -77,13 +77,13 @@ header {
 }
 
 /* 선택된 버튼 */
-.lch-infoPro-select {
+.lch-sqld-select {
   background: #D96073;
   color: white;
 }
 
 /* 자격증 카테고리 버튼 담은 박스 */
-.lch-infoPro-category {
+.lch-sqld-category {
   /* border: 1px solid black; */
   width: 100%;
   height: 45px;
@@ -92,7 +92,7 @@ header {
 }
 
 /* 자격증 카테고리 버튼 */
-.lch-infoPro-category-btn {
+.lch-sqld-category-btn {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -103,8 +103,8 @@ header {
 }
 
 /* 디데이 안에 들어가는 글과 링크되어있는 글 */
-.lch-infoPro-day-title,
-.lch-infoPro-day-link{
+.lch-sqld-day-title,
+.lch-sqld-day-link{
   color: #D96073;
   margin: 10px;
   font-size: 30px;
@@ -112,53 +112,53 @@ header {
 }
 
 /* 링크되어있는 글 색상 */
-.lch-infoPro-day-link{
+.lch-sqld-day-link{
   color: #ac394b;
 }
 
 /* 정처기 시험안내 글 본문 박스 */
-.lch-infoPro-content {
+.lch-sqld-content {
   display: flex;
   flex-direction: column;
   margin: 0px 0px 50px 0px;
 }
 
 /* 정처기 시험 일정, 응시자격, 시험구성 담은 박스 */
-.lch-infoPro-content ,
-.lch-infoPro-application,
-.lch-infoPro-test{
+.lch-sqld-content ,
+.lch-sqld-application,
+.lch-sqld-test{
   width: 100%;
   height: 100%;
   margin: 0px 0px 50px 0px;
 }
 
 /* 정처기 시험 일정, 응시자격, 시험구성  대제목 */
-.lch-infoPro-content-title,
-.lch-infoPro-application-title,
-.lch-infoPro-test-title{
+.lch-sqld-content-title,
+.lch-sqld-application-title,
+.lch-sqld-test-title{
   font-size: 30px;
   margin: 20px 10px;
 }
 
 /* 시험 일정 테이블 담은 전체 박스 */
-.lch-infoPro-table{
+.lch-sqld-table{
   display: flex;
   flex-direction: column;
   border: 1px solid black;
 }
 
 /* 테이블 안의 공통 요소 */
-.lch-infoPro-table-title, 
-.lch-infoPro-table-content1,
-.lch-infoPro-table-content2,
-.lch-infoPro-table-content3{
+.lch-sqld-table-title, 
+.lch-sqld-table-content1,
+.lch-sqld-table-content2,
+.lch-sqld-table-content3{
   display: flex;
   list-style-type: none;
 }
-.lch-infoPro-table-element1,
-.lch-infoPro-table-element2,
-.lch-infoPro-table-element3,
-.lch-infoPro-table-element4{
+.lch-sqld-table-element1,
+.lch-sqld-table-element2,
+.lch-sqld-table-element3,
+.lch-sqld-table-element4{
   border: 1px solid black;
   width: 100%;
   height: 100%;
@@ -169,7 +169,7 @@ header {
 }
 
 /* 테이블 제목행 배경색 지정, 글자 굵게 표시 */
-.lch-infoPro-table-title{
+.lch-sqld-table-title{
   background: #DFDFDF;
   font-weight: bold;
 }
@@ -178,10 +178,10 @@ header {
 응시자격 - 학력 및 경력 요건, 기타 자격 제목 
 시험구성 - 필기시험, 실기 시험 제목
 */
-.lch-infoPro-application-sub-title1,
-.lch-infoPro-other-sub-title2,
-.lch-infoPro-write-sub-title1,
-.lch-infoPro-skill-sub-title2{
+.lch-sqld-application-sub-title1,
+.lch-sqld-other-sub-title2,
+.lch-sqld-write-sub-title1,
+.lch-sqld-skill-sub-title2{
   font-size: 20px;
   margin: 0px 0px 10px 20px;
 }
@@ -190,16 +190,13 @@ header {
 응시자격 소제목 안 내용들
 시험구성 소젝목 안 내용들
 */
-.lch-infoPro-application-content1,
-.lch-infoPro-other-content2,
-.lch-infoPro-write-content1,
-.lch-infoPro-skill-content2{
+.lch-sqld-application-content1,
+.lch-sqld-other-content2,
+.lch-sqld-write-content1,
+.lch-sqld-skill-content2{
   margin: 0px 0px 20px 40px;
 }
 
-.lch-infoPro-skill-list1{
-  flex-wrap: wrap-reverse;
-}
 
 /* footer 영역 (임시) */
 footer {
