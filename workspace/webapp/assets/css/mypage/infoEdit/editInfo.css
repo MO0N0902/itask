@@ -46,8 +46,21 @@
 }
 .keh-editInfo-infoForm>p{
   text-align: left;
+  margin-top: 10px;
   padding: 10px 30px;
+  font-size: 20px;
 }
+
+/* 중복 검사 했을 때 중복이면 출력되게 - 배지수 작성 */
+.bjs-editInfo-duplicate-nickName {
+  color:#D96073;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 30px;
+  font-size: 20px;
+  display: none;
+}
+
 .keh-editInfo-nickNameBox{
   margin: auto;
   width: 100%;
