@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 메뉴</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .Detail-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .Detail-dropdown-img {
+            cursor: pointer;
+            width: 40px; /* 이미지 크기 설정 */
+            height: 40px;
+        }
+        .Detail-dropdown-menu {
+            display: none;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .Detail-dropdown-menu a {
+            display: block;
+            padding: 20px 40px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        .Detail-dropdown-menu a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+      <div class="Detail-dropdown">
+        <!-- 이미지를 클릭하면 드롭다운이 열립니다 -->
+        <img 
+            src="./../../assets/img/Container.png" 
+            alt="드롭다운 이미지" 
+            class="Detail-dropdown-img" 
+            onclick="Dropdown()" 
+        >
+        <div class="Detail-dropdown-menu" id="dropdownMenu">
+            <a href="#">수정</a>
+            <a href="#">삭제</a>
+        </div>
+      </div>
+
+    <script>
+        function Dropdown() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
