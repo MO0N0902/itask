@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>댓글 작성</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #comment-section {
+      margin-top: 20px;
+    }
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .comment-count {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>댓글 작성</h1>
+  
+  <!-- 댓글 입력 폼 -->
+  <div>
+    <textarea id="comment-input" rows="4" cols="50" placeholder="댓글을 입력하세요..."></textarea><br><br>
+    <button onclick="addComment()">댓글 작성</button>
+  </div>
+
+  <!-- 댓글이 추가될 영역 -->
+  <div id="comment-section"></div>
+
+  <!-- 댓글 수 표시 -->
+  <div class="comment-count">총 댓글 수: <span id="comment-count">0</span></div>
+
+  <script>
+    // 총 댓글 수를 추적하는 변수
+    let commentCount = 0;
+
+    // 댓글을 추가하는 함수
+    function addComment() {
+      const commentInput = document.getElementById('comment-input');
+      const commentText = commentInput.value.trim();
+      
+      // 댓글이 비어 있지 않으면
+      if (commentText !== '') {
+        // 새로운 댓글을 생성
+        const commentArea = document.createElement('div');
+        commentArea.classList.add('comment');
+        commentArea.textContent = commentText;
+
+        // 댓글을 댓글 섹션에 추가
+        const commentSection = document.getElementById('comment-section');
+        commentSection.appendChild(commentArea);
+        
+        // 댓글 수 증가
+        commentCount++;
+
+        // 댓글 수 업데이트
+        document.getElementById('comment-count').textContent = commentCount;
+
+        // 입력창 비우기
+        commentInput.value = '';
+      } else {
+        alert('댓글을 입력해주세요!');
+      }
+    }
+  </script>
+</body>
+</html>
