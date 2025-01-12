@@ -20,10 +20,6 @@ img {
 
 li {
   list-style: none;
-<<<<<<< Updated upstream
-  color: #bbb;
-=======
->>>>>>> Stashed changes
 }
 
 .footer-blind {
@@ -37,11 +33,7 @@ li {
 
 /* Footer */
 .footer-box {
-<<<<<<< Updated upstream
-  background-color: #D96073;
-=======
   background-color: #d96073;
->>>>>>> Stashed changes
   color: #fff;
   padding: 60px 0;
 }
@@ -54,12 +46,7 @@ li {
 
 .footer-menu {
   display: flex;
-<<<<<<< Updated upstream
-  justify-content: center;
-  text-align: center;
-=======
   justify-content: space-between;
->>>>>>> Stashed changes
   margin-bottom: 40px;
 }
 
