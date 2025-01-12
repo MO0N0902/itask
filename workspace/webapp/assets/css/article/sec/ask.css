@@ -38,6 +38,8 @@ header {
 
 /* 개발 태그 버튼 담은 박스 */
 .bjs-ask-tag {
+  /* width: 1000px; */
+  /* white-space: wrap; */
   display: flex;
   justify-content: center;
 }
@@ -58,7 +60,6 @@ header {
 .bjs-ask-tag-btn:hover {
   background-color: #e7d4d7;
 }
-
 
 /* 선택된 버튼 */
 .bjs-ask-select {
