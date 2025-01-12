@@ -13,7 +13,7 @@ footer{
 }
 
 /* main 영역 */
-.itaskBox {
+.ittipBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,7 +22,7 @@ footer{
   align-items: center;
 }
   /* / main 영역 / */
-  .askBox {
+  .tipBox {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,7 +32,7 @@ footer{
   }
   
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-  .mjh-ask-topcontainer {
+  .mjh-tip-topcontainer {
     width: 1200px;
     height: 100%;
     display: flex;
@@ -41,20 +41,20 @@ footer{
   }
   
   /* / 개발 큰 글씨 / */
-  .mjh-ask-title {
+  .mjh-tip-title {
     font-size: 50px;
     margin: 50px;
   }
   
   /* / 개발 태그 버튼 담은 박스 / */
-  .mjh-ask-tag {
+  .mjh-tip-tag {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
   
   /* / 개발 태그 버튼 / */
-  .mjh-ask-tag-btn {
+  .mjh-tip-tag-btn {
     border: 1px solid #D96073;
     color: #D96073;
     background: none;
@@ -66,13 +66,12 @@ footer{
   }
   
   /* / 선택된 버튼 / */
-  .mjh-ask-select {
+  .mjh-tip-select {
     background: #D96073;
     color: white;
   }
-  
   /* / 개발 카테고리 버튼 담은 박스 / */
-  .mjh-ask-category {
+  .mjh-tip-category {
     border: none; 
     width: 100%;
     display: flex;
@@ -89,26 +88,26 @@ footer{
     cursor: pointer;
   }
 
-.mjh-ask-tag-btn:hover {
+.mjh-tip-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-.mjh-ask-select {
+.mjh-tip-select {
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-.mjh-ask-category {
+.mjh-tip-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.mjh-ask-category-btn {
+.mjh-tip-category-btn {
   width: 100%;
   border-radius: 0;
   border:none;
@@ -118,7 +117,7 @@ footer{
   cursor: pointer;
 }
 /* 글 제목 및 정보보 */
-.mjh-ask-text-total {
+.mjh-tip-text-total {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px; /* 좌우 넓이 추가 */
@@ -127,11 +126,11 @@ footer{
   padding-bottom: 20px;
 }
 /* 본문 헤더더 */
-.ask-text-header{
+.tip-text-header{
   margin-bottom: 20px;
 }
 /* 본문 제목목 */
-.mjh-ask-text-title{
+.mjh-tip-text-title{
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -139,7 +138,7 @@ footer{
   cursor: pointer;
 }
 /* 본문 상단 태그그 */
-.mjh-ask-text-tag {
+.mjh-tip-text-tag {
   background-color: #D96073; /* 변경된 색상 */
   color: white;
   padding: 5px 10px;
@@ -148,7 +147,7 @@ footer{
   font-weight: bold;
 }
 /* 본문 내용용 */
-.mjh-ask-text-textbody {
+.mjh-tip-text-textbody {
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -159,18 +158,18 @@ footer{
   margin-bottom: 20px;
 }
 /* 본문 작성자자 프로필 */
-.ask-text-profile{
+.tip-text-profile{
   display: flex;
   justify-items: center;
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.mjh-ask-text-author{
+.mjh-tip-text-author{
   padding-left: 10px;
 }
 /* 본문 하단 태그그 */
-.mjh-ask-text-bottom-tag {
+.mjh-tip-text-bottom-tag {
   background-color: #DFDFDF; /* 변경된 색상 */
   color: #333;
   padding: 5px 10px;
@@ -237,7 +236,7 @@ footer{
 }
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
-.mjh-askDetail-comment-box{
+.mjh-tipDetail-comment-box{
   width: 100%;
   height: 100%;
   display: flex;
@@ -245,13 +244,13 @@ footer{
 }
 
 /* 총 댓글 수 표시 */
-.mjh-askDetail-comment-count{
+.mjh-tipDetail-comment-count{
   font-size: 25px;
   margin: 10px;
 }
 
 /* 댓글 입력칸, 올리기 버튼이 담긴 박스 */
-.mjh-askDetail-comment-input{
+.mjh-tipDetail-comment-input{
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -270,7 +269,7 @@ footer{
 }
 
 /* 댓글 올리기 버튼 */
-.mjh-askDetail-add-btn{
+.mjh-tipDetail-add-btn{
   width: 80px;
   height: 100%;
   font-size: 20px;
@@ -281,7 +280,7 @@ footer{
 }
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
-.mjh-askDetail-comment-show{
+.mjh-tipDetail-comment-show{
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -292,7 +291,7 @@ footer{
 }
 
 /* 작성자 */
-.mjh-askDetail-commnet-author{
+.mjh-tipDetail-commnet-author{
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -300,14 +299,14 @@ footer{
 }
 
 /* 작성된 댓글 */
-.mjh-askDetail-comment-section{
+.mjh-tipDetail-comment-section{
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
-.mjh-askDetail-comment-info{
+.mjh-tipDetail-comment-info{
   font-size: 15px;
   color: #606060;
   margin: 0px 0px 20px 15px;
@@ -316,8 +315,8 @@ footer{
 /* 작성된 시간 */
 /* 조회수 */
 /* 모니터 */
-.mjh-askDetail-comment-date,
-.mjh-askDetail-comment-views,
-.mjh-askDetail-comment-monitor{
+.mjh-tipDetail-comment-date,
+.mjh-tipDetail-comment-views,
+.mjh-tipDetail-comment-monitor{
   padding: 10px;
 }
