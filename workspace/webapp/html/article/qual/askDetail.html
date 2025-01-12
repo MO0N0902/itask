@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/article/qual/askDetail.css">
+  <script src="./../../../assets/js/article/qual/askDetail.js"></script>
+</head>
+<body>
+  <!-- 헤더 영역 -->
+  <header>header area</header>
+
+  <!-- 메인 영역 -->
+  <main class="itaskBox">
+    <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+    <article class="lch-askDetail-elements">
+      <!-- 자격증  -->
+      <span class="lch-askDetail-title">자격증</span>
+      <!-- 자격증 상위 카테고리 -->
+      <div class="lch-askDetail-category">
+        <button class="lch-askDetail-category-btn" onclick="location.href='./guide/infoSec.html'">시험안내</button>
+        <button class="lch-askDetail-category-btn lch-askDetail-select" onclick="location.href='./askDetail.html'">질문</button>
+        <button class="lch-askDetail-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
+      </div>
+
+      <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
+      <div class="lch-askDetail-test">준혁님 코드가 들어갈 부분 (게시글 내용)</div>
+
+
+      <!-- 게시글 내용에 대한 댓글 부분 -->
+      <article class="lch-askDetail-comment-box">
+
+        <!-- 총 댓글 수 -->
+        <div class="lch-askDetail-comment-count">댓글 <span id="comment-count">1</span></div>
+        <!-- 댓글 작성 창 -->
+        <div class="lch-askDetail-comment-input">
+          <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+          <button onclick="addComment()" class="lch-askDetail-add-btn">올리기</button>
+        </div>
+
+        <!-- 작성된 댓글이 보여지는 리스트 창 -->
+        <div id="comment-section">
+          <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
+          <div class="lch-askDetail-comment-show">
+            <span class="lch-askDetail-commnet-author">27inch 문준혁🏅</span>
+            <div class="lch-askDetail-comment-section"> 예시 댓글01 예시 댓글01 예시 댓글01 예시 댓글01</div>
+            <!-- 작성된 날짜, 조회수, 모니터를 담은 박스 -->
+            <div class="lch-askDetail-comment-info">
+              <!-- js으로 24시간 전이면 시간으로 이후는 몇일 전으로 31일 넘어가면 몇달 12개월 넘어가면 몇 년 -->
+              <span class="lch-askDetail-comment-date">14일전</span>
+              <span class="lch-askDetail-comment-views">조회수 1000+</span>
+              <span class="lch-askDetail-comment-monitor">
+                <img src="./../../../assets/img/monitor.png" alt="사진오류"> 100+
+              </span>
+            </div>
+          </div>
+          <!-- --------------------------이만큼 추가돼야함^_^~-------------------- -->
+        </div>
+      </article>
+
+    </article>
+  </main>
+</body>
+</html>
