@@ -1,12 +1,12 @@
-const tagBtns = document.querySelectorAll('.lch-askDetail-tag-btn');
+const tagBtns = document.querySelectorAll('.lch-tipDetail-tag-btn');
 
 tagBtns.forEach((tagBtn) => {
   tagBtn.addEventListener('click', function () {
-    // 모든 버튼에서 lch-askDetail-select 클래스 제거
-    tagBtns.forEach((btn) => btn.classList.remove('lch-askDetail-select'));
+    // 모든 버튼에서 lch-tipDetail-select 클래스 제거
+    tagBtns.forEach((btn) => btn.classList.remove('lch-tipDetail-select'));
 
-    // 클릭된 버튼에 lch-askDetail-select 클래스 추가
-    tagBtn.classList.add('lch-askDetail-select');
+    // 클릭된 버튼에 lch-tipDetail-select 클래스 추가
+    tagBtn.classList.add('lch-tipDetail-select');
   });
 });
 
@@ -25,39 +25,39 @@ function addComment() {
 
     // 댓글의 모든 정보를 담은 제일 큰 박스
     const commentArea = document.createElement('div');
-    commentArea.classList.add('lch-askDetail-comment-show');
+    commentArea.classList.add('lch-tipDetail-comment-show');
 
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
-    commmentAuthor.classList.add('lch-askDetail-commnet-author');
+    commmentAuthor.classList.add('lch-tipDetail-commnet-author');
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)
     const comment = document.createElement('div');
-    comment.classList.add('lch-askDetail-comment-section');
+    comment.classList.add('lch-tipDetail-comment-section');
     comment.textContent = commentText;
 
     // 작성일자, 조회수, 모니터 담은 박스
     const commentInfo = document.createElement('div');
-    commentInfo.classList.add('lch-askDetail-comment-info');
+    commentInfo.classList.add('lch-tipDetail-comment-info');
 
     // 작성일자
     const commentDate = document.createElement('span');
-    commentDate.classList.add('lch-askDetail-comment-date');
+    commentDate.classList.add('lch-tipDetail-comment-date');
     commentDate.textContent = "1시간 전" // 나중에 불러오는거 여기 추가
 
     // 조회수
     const commentViews = document.createElement('span');
-    commentViews.classList.add('lch-askDetail-comment-views');
+    commentViews.classList.add('lch-tipDetail-comment-views');
     commentViews.textContent = "조회수 316"; // 나중에 불러오는거 여기 추가
 
     // 모니터 수, 이미지 박스
     const commentMonitor = document.createElement('span');
-    commentMonitor.classList.add('lch-askDetail-comment-monitor');
+    commentMonitor.classList.add('lch-tipDetail-comment-monitor');
 
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
-    commentMonitorNum.classList.add('lch-askDetail-comment-monitor-num');
+    commentMonitorNum.classList.add('lch-tipDetail-comment-monitor-num');
     commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
 
     //모니터 이미지
