@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지게시판 목록</title>
+    <link rel="stylesheet" href="./../../assets/css/admin/notice.css">
+    <script defer src="./../../assets/js/admin/notice.js"></script>
+</head>
+
+<body>
+  <nav class="mtable">
+    <!-- Header Section -->
+    <div class="head">
+        <div class="title">공지게시판 목록</div>
+        <div class="buttons">
+            <button id="editButton">수정</button>
+            <button id="deleteButton">삭제</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Table Header -->
+    <div class="memColumn header">
+        <input type="checkbox" id="selectAll" onclick="toggleSelectAll()">
+        <p>분류</p>
+        <p class="notice-title">글제목</p>
+        <p>작성일</p>
+        <p>조회수</p>
+    </div>
+    <hr>
+
+    <!-- 게시글 -->
+    <div class="memColumn" data-id="1">
+        <div>
+            <input type="checkbox" class="item-checkbox">
+            <p>전체</p>
+            <p class="notice-title" onclick="toggleText(this)">ITASK에 오신 여러분들 환영합니다.</p>
+            <p>2025-01-11</p>
+            <p>151</p>
+        </div>
+        <div class="notice-text" style="display: none;">공지사항 본문내용</div>
+    </div>
+
+    <div class="memColumn" data-id="2">
+        <div>
+            <input type="checkbox" class="item-checkbox">
+            <p>전체</p>
+            <p class="notice-title" onclick="toggleText(this)">ITASK에 오신 여러분들 환영합니다.</p>
+            <p>2025-01-12</p>
+            <p>200</p>
+        </div>
+        <div class="notice-text" style="display: none;">공지사항 본문내용 공지사항 본문내용</div>
+    </div>
+
+    <div class="pagination">
+        <a href="#">«</a>
+        <a href="#">‹</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">›</a>
+        <a href="#">»</a>
+    </div>
+</nav>
+</body>
+
+</html>
