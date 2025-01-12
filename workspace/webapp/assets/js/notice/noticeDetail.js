@@ -1,7 +1,7 @@
 let count = 0;
 
-const img = document.getElementById('mjh-noticeDetail-moniter')
-const countplus = document.getElementById('mjh-noticeDetail-count')
+const img = document.getElementById('Detail-moniter-img')
+const countplus = document.getElementById('Detail-monitercount')
 
 img.addEventListener('click',function(){
   if(count===0){

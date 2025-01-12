@@ -15,6 +15,7 @@
 .header .logo {
     display: flex;
     align-items: center;
+
 }
 
 .header .logo img {
@@ -134,8 +135,4 @@
 .sub-nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-.sub-nav ul li a:hover {
-    text-decoration: underline;
 }
