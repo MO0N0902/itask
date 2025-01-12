@@ -12,7 +12,7 @@ header {
 }
 
 /* main 영역 */
-.askBox {
+.tipBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,7 +22,7 @@ header {
 }
 
 /* main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) */
-.bjs-ask-topcontainer {
+.bjs-tip-topcontainer {
   width: 1200px;
   height: 100%;
   display: flex;
@@ -31,19 +31,21 @@ header {
 }
 
 /* 개발 큰 글씨 */
-.bjs-ask-title {
+.bjs-tip-title {
   font-size: 50px;
   margin: 50px;
 }
 
 /* 개발 태그 버튼 담은 박스 */
-.bjs-ask-tag {
+.bjs-tip-tag {
+  /* width: 1000px; */
+  /* white-space: wrap; */
   display: flex;
   justify-content: center;
 }
 
 /* 개발 태그 버튼 */
-.bjs-ask-tag-btn {
+.bjs-tip-tag-btn {
   border: 1px solid #D96073;
   color: #D96073;
   background: none;
@@ -55,26 +57,27 @@ header {
   cursor: pointer;
 }
 
-.bjs-ask-tag-btn:hover {
+/* 마우스 올리면 색 바뀜 */
+.bjs-tip-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
-
 /* 선택된 버튼 */
-.bjs-ask-select {
+.bjs-tip-select {
   background: #D96073;
   color: white;
 }
 
+
 /* 개발 카테고리 버튼 담은 박스 */
-.bjs-ask-category {
+.bjs-tip-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.bjs-ask-category-btn {
+.bjs-tip-category-btn {
   width: 100%;
   border-radius: 0;
   border:none;
@@ -85,7 +88,7 @@ header {
 }
 
 /* 게시글 목록 컨테이너 */
-.bjs-ask-post-list {
+.bjs-tip-post-list {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto; /* 가운데 정렬 */
@@ -96,7 +99,7 @@ header {
 }
 
 /* 게시글 단위 */
-.bjs-ask-post-item {
+.bjs-tip-post-item {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px; /* 좌우 넓이 추가 */
@@ -105,7 +108,7 @@ header {
 }
 
 /* 게시글 상단 영역 */
-.bjs-ask-post-header {
+.bjs-tip-post-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -113,7 +116,7 @@ header {
 }
 
 /* 태그 스타일 */
-.bjs-ask-post-tag {
+.bjs-tip-post-tag {
   background-color: #D96073; /* 변경된 색상 */
   color: white;
   padding: 5px 10px;
@@ -123,7 +126,7 @@ header {
 }
 
 /* 게시물 제목 */
-.bjs-ask-post-title {
+.bjs-tip-post-title {
   font-size: 18px;
   font-weight: bold;
   color: #333;
@@ -132,7 +135,7 @@ header {
 }
 
 /* 게시글 본문 */
-.bjs-ask-post-body {
+.bjs-tip-post-body {
   font-size: 14px;
   color: #555;
   margin-bottom: 10px;
@@ -144,7 +147,7 @@ header {
 }
 
 /* 게시글 하단 정보 */
-.bjs-ask-post-footer {
+.bjs-tip-post-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,18 +156,18 @@ header {
 }
 
 /* 작성자, 조회수, 답글 등 */
-.bjs-ask-post-info {
+.bjs-tip-post-info {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.bjs-ask-post-info img {
+.bjs-tip-post-info img {
   width: 16px;
   height: 16px;
   vertical-align: middle;
 }
 
-.bjs-ask-post-author {
+.bjs-tip-post-author {
   cursor: pointer;
 }
