@@ -22,7 +22,11 @@ img {
 
 /* 헤더 스타일 */
 .header-box {
+<<<<<<< Updated upstream
   background-color: #D97073;
+=======
+  background-color: #D96073;
+>>>>>>> Stashed changes
   color: white;
   width: 100%;
 }
@@ -34,12 +38,17 @@ img {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+<<<<<<< Updated upstream
+=======
+  height: 60%; 
+>>>>>>> Stashed changes
 }
 
 /* 로고 */
 .header-brand img {
   height: 50px;
 }
+<<<<<<< Updated upstream
 /* 메뉴 */
 .head-item{
   margin: 0;
@@ -50,6 +59,16 @@ img {
 .search-box {
   flex: 1;
   margin: 0 1rem;
+=======
+
+/* 검색 박스 */
+.search-box {
+  flex: 0 1 40%;
+  max-width: 500px;
+  margin-right: 1rem; 
+  display: flex;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .search-input-container {
@@ -58,6 +77,10 @@ img {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+<<<<<<< Updated upstream
+=======
+  flex: 1;
+>>>>>>> Stashed changes
 }
 
 .search-input {
@@ -77,12 +100,23 @@ img {
   height: 20px;
 }
 
+<<<<<<< Updated upstream
 .head-container{
   display: flex;
   align-items: center;
   justify-content: flex-end; /* 요소들을 오른쪽 정렬 */
   gap: 1rem; /* 아이템 간 간격 */
 }
+=======
+/* head-container */
+.head-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+>>>>>>> Stashed changes
 /* 글쓰기 박스 */
 .write-box {
   background-color: #ffffff;
@@ -91,6 +125,10 @@ img {
   border-radius: 20px;
   display: flex;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+  margin-left: 1rem; 
+>>>>>>> Stashed changes
 }
 
 .write-box .icon {
@@ -102,11 +140,17 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+<<<<<<< Updated upstream
   background-color: transparent; /* 배경 제거 */
   padding: 0.5rem;
   margin: 0;
   padding: 0;
   gap: 0.3rem;
+=======
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 .monitor-icon {
@@ -114,7 +158,11 @@ img {
 }
 
 .monitor-level {
+<<<<<<< Updated upstream
   font-size: 0.9rem;
+=======
+  font-size: 1rem;
+>>>>>>> Stashed changes
   color: white;
   margin-top: 0.3rem;
 }
@@ -128,6 +176,7 @@ img {
 
 /* 네비게이션 스타일 */
 .navbar-box {
+<<<<<<< Updated upstream
   background-color: #AC394B;
   padding: 0.5rem 0;
 }
@@ -138,6 +187,24 @@ img {
   gap: 1rem;
   justify-content: flex-start;
   margin-left: 15%;
+=======
+  background-color: #ac394b;
+  padding: 0.5rem 0;
+  height: 40%; 
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 0 1rem;
+  margin-left: 2rem;
+} 
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+>>>>>>> Stashed changes
 }
 
 .nav-item {
@@ -146,7 +213,11 @@ img {
 
 .nav-link {
   padding: 0.5rem 1rem;
+<<<<<<< Updated upstream
   color: #ffffff;
+=======
+  color: #fff;
+>>>>>>> Stashed changes
   font-weight: bold;
 }
 
@@ -170,7 +241,11 @@ img {
 .dropdown-menu .dropdown-link {
   display: block;
   padding: 0.5rem 1rem;
+<<<<<<< Updated upstream
   color: #333;
+=======
+  color: black;
+>>>>>>> Stashed changes
   text-decoration: none;
   white-space: nowrap;
 }
@@ -182,4 +257,8 @@ img {
 
 .nav-item:hover .dropdown-menu {
   display: block;
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
