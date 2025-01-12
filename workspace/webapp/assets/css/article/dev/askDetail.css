@@ -82,7 +82,7 @@ header {
   margin: auto;
   align-items: center;
   justify-content: center;
-  background-color: #a2a2a2;
+  background-color: #DFDFDF;
   padding: 20px;
   width: 800px;
   margin-top: 200px;
@@ -101,12 +101,88 @@ header {
   width: 35px;
   padding-left: 100px;
 }
-.commen-content{
-  display: flex;
-  justify-items: center;
-  width: 1200px;
+/* 드롭다운 */
+.Detail-dropdown {
+  position: relative;
+  display: inline-block;
 }
-.comment-count{
+.Detail-dropdown-img {
+  position: relative;
+  padding-left: 100px;
+  cursor: pointer;
+  width: 40px; /* 이미지 크기 설정 */
+  height: 40px;
+}
+.Detail-dropdown-menu {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.Detail-dropdown-menu >a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.Detail-dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+/* 댓글과 댓글수 표시 */
+.comment{
   font-size: 30px;
   font-weight: bold;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  padding-right: 1000px;
 }
+.mjh-Detail-comment-content{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+} 
+/* 생성되는 댓글글 */
+#comment-section{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 60px;
+}
+/* 댓글 입력창창 */
+#comment-input{
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #a2a2a2;
+  width: 1000px;
+  height: 100px;
+}
+/* 올리기 버튼튼 */
+#uploadbtn{
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #D96073;
+  background-color: white;
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
+}
+/* 생성되는 댓글박스 */
+.commentTextbox{
+  width: 1100px;
+  height: 150px;
+  margin: auto;
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+  display: flex;
+  font-size: 30px;
+}
+
