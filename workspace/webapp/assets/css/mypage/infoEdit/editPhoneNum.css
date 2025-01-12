@@ -20,41 +20,40 @@
   font-size: 40px;
   margin-bottom: 50px;
 }
+
 .itAskBox>p>span{
   font-size: 20px;
 }
-/* 인증된 정보 상자 */
-.itAskBox>section{
-  width: 406px;
-  border-top: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
-  margin: 0px auto 50px;
-  padding: 40px;
-  text-align: left;
-  font-size: 20px;
-}
-.itAskBox>section>ul>li{
-  line-height: 50px;
-}
-/* 닉네임 감싸는 폼태그 */
+
+/* 감싸는 폼태그 */
 .keh-editPhoneNum-infoForm{
   margin: auto;
   width: 486px;
   /* border: 1px solid #D96073; */
 }
-.keh-editPhoneNum-infoForm>p{
-  text-align: left;
-  padding: 10px 30px;
-}
-.keh-editPhoneNum-nickNameBox{
+/* 이름입력칸 */
+.keh-editPhoneNum-name{
+  width: 436px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  left: 0px;
+  font-size: 20px;
+  text-decoration: none;
+} 
+
+/* 폰번호입력 박스, 인증번호입력 박스스 */
+.keh-editPhoneNum-phoneNum-Box{
   margin: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid #D96073; */
+  margin-top: 20px;
 }
-
-/* 닉네임입력하는 실제 칸 */
-.keh-editPhoneNum-nickName{
+/* 폰번호입력칸, 인증번호 입력칸 */
+.keh-editPhoneNum-phoneNum{
   width: 268px;
   height: 70px;
   padding-left: 50px;
@@ -64,53 +63,26 @@
   font-size: 20px;
   text-decoration: none;
 }
-/* 수정버튼 */
-.keh-editPhoneNum-nickName-btn{
+/* 버튼 */
+.keh-editPhoneNum-phoneNum-btn{
   height: 70px;
   width: 130px;
   background-color: #D96073;
   color: white;
-  font-size: 20px;
+  font-size: 14px;
   border-radius: 50px;
   cursor: pointer;
-}
-.keh-editPhoneNum-nickName-btn:hover{
-  color:#D96073;
-  background-color: white;
-  border: 1px solid #D96073;
-}
-/* 경계선 */
-.itAskBox>hr{
-  width: 486px;
-  border: 1px solid #dfdfdf;
-  margin: 40px auto;
-}
-
-/* 비번수정버튼 */
-.itAskBox>button{
-  width: 486px;
-  height: 70px;
-  background-color: #D96073;
-  font-size: 20px;
-  text-decoration: none;  
-  border-radius: 50px;
-  margin: 10px 0px;
-}
-.itAskBox>button:hover{
-  border: 1px solid #D96073;
-  background-color: white;
-}
-/* 폰번호수정버튼 */
-.itAskBox>button>a{
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  text-decoration: none; 
-  color: white;
-  display: inline-block;
   border: none;
 }
-.itAskBox>button>a:hover{
+.keh-editPhoneNum-phoneNum-btn:hover{
   color:#D96073;
-  font-weight: bold;
+  background-color: white;
+  border: 1px solid #D96073;
+}
+
+/* 인증번호 아래 확인되었습니다 문구 */
+.keh-editPhoneNum-checkInfo{
+  text-align: left;
+  padding: 10px 30px;
+  color : #22A309;
 }
