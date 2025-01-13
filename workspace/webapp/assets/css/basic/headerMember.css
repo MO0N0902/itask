@@ -145,6 +145,8 @@ img {
 .navbar-nav {
   display: flex;
   gap: 1rem;
+  width: 1200px;
+  margin: auto;
 }
 
 .nav-item {
