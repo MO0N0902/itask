@@ -23,18 +23,9 @@ footer {
   align-items: center;
 }
 
-/* / main 영역 / */
-.askBox {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-.lch-ask-topcontainer {
+.lch-askDetail-topcontainer {
   width: 1200px;
   height: 100%;
   display: flex;
@@ -43,20 +34,20 @@ footer {
 }
 
 /* / 개발 큰 글씨 / */
-.lch-ask-title {
+.lch-askDetail-title {
   font-size: 50px;
   margin: 50px;
 }
 
 /* / 개발 태그 버튼 담은 박스 / */
-.lch-ask-tag {
+.lch-askDetail-tag {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 /* / 개발 태그 버튼 / */
-.lch-ask-tag-btn {
+.lch-askDetail-tag-btn {
   border: 1px solid #D96073;
   color: #D96073;
   background: none;
@@ -68,13 +59,13 @@ footer {
 }
 
 /* / 선택된 버튼 / */
-.lch-ask-select {
+.lch-askDetail-select {
   background: #D96073;
   color: white;
 }
 
 /* / 개발 카테고리 버튼 담은 박스 / */
-.lch-ask-category {
+.lch-askDetail-category {
   border: none;
   width: 100%;
   display: flex;
@@ -91,26 +82,26 @@ footer {
   cursor: pointer;
 }
 
-.lch-ask-tag-btn:hover {
+.lch-askDetail-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-.lch-ask-select {
+.lch-askDetail-select {
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-.lch-ask-category {
+.lch-askDetail-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.lch-ask-category-btn {
+.lch-askDetail-category-btn {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -121,7 +112,7 @@ footer {
 }
 
 /* 글 제목 및 정보보 */
-.lch-ask-text-total {
+.lch-askDetail-text-total {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px;
@@ -132,12 +123,12 @@ footer {
 }
 
 /* 본문 헤더더 */
-.ask-text-header {
+.askDetail-text-header {
   margin-bottom: 20px;
 }
 
 /* 본문 제목목 */
-.lch-ask-text-title {
+.lch-askDetail-text-title {
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -146,7 +137,7 @@ footer {
 }
 
 /* 본문 상단 태그그 */
-.lch-ask-text-tag {
+.lch-askDetail-text-tag {
   background-color: #D96073;
   /* 변경된 색상 */
   color: white;
@@ -157,7 +148,7 @@ footer {
 }
 
 /* 본문 내용용 */
-.lch-ask-text-textbody {
+.lch-askDetail-text-textbody {
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -170,7 +161,7 @@ footer {
 }
 
 /* 본문 작성자자 프로필 */
-.ask-text-profile {
+.askDetail-text-profile {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -178,12 +169,12 @@ footer {
   padding-top: 20px;
 }
 
-.lch-ask-text-author {
+.lch-askDetail-text-author {
   padding-left: 10px;
 }
 
 /* 본문 하단 태그그 */
-.lch-ask-text-bottom-tag {
+.lch-askDetail-text-bottom-tag {
   background-color: #DFDFDF;
   /* 변경된 색상 */
   color: #333;
