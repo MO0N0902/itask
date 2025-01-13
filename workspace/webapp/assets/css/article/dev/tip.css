@@ -87,6 +87,16 @@ header {
   cursor: pointer;
 }
 
+/* 버튼 밖에 a 태그 사용하는 방법 */
+.bjs-tip-category-btn>a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: black; 
+  padding-top:5px;
+}
+
 /* 게시글 목록 컨테이너 */
 .bjs-tip-post-list {
   width: 100%;
@@ -134,6 +144,11 @@ header {
   margin-left: 10px;
 }
 
+.bjs-tip-post-title > a{
+  text-decoration: none;
+  color:black;
+}
+
 /* 게시글 본문 */
 .bjs-tip-post-body {
   font-size: 14px;
@@ -144,6 +159,11 @@ header {
   white-space: wrap;
   overflow: hidden;
   cursor: pointer;
+}
+
+.bjs-tip-post-body>a{
+  text-decoration: none;
+  color:#555;
 }
 
 /* 게시글 하단 정보 */
