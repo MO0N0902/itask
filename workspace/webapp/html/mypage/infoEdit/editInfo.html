@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>내 정보 수정하기</title>
     <link rel="stylesheet" href="./../../../assets/css/mypage/infoEdit/editInfo.css">
+    <script defer src="./../../../assets/js/mypage/infoEdit/editInfo.js"></script>
   </head>
   <body>
     <main class="itAskBox">   
@@ -32,7 +33,14 @@
           <input type="text" name="keh-editInfo-nickName" class="keh-editInfo-nickName" placeholder="변경할 닉네임">
           <input type="submit" name="keh-editInfo-nickName-btn" class="keh-editInfo-nickName-btn" value="수정">
         </div>   
-        <p>공백없이 영문, 숫자 6~15자</p>    
+
+        <p>공백없이 한글, 영문, 숫자 포함 6~15자</p>
+        <p>특수문자 사용불가</p>
+        <!-- 닉네임 중복일시 출력되는 문구.  이외의 유효성검사는 모두 alert()로 날릴것임-->
+        <div class="bjs-editInfo-duplicate-nickName">이미 있는 닉네임입니다</div>
+        
+        <!-- <input type="submit" class="keh-editInfo-pwBtn" value="비밀번호 변경하기"> -->
+
       </form>
       <hr>
       <button><a href="./editPw.html">비밀번호 수정하기</a></button><br>
