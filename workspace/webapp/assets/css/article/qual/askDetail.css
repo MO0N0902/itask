@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
 /* header, footer 영역 (임시) */
 header,
-footer{
+footer {
   border: 1px solid black;
   background-color: #D96073;
   width: 100%;
@@ -22,8 +23,18 @@ footer{
   align-items: center;
 }
 
-/* main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) */
-.lch-askDetail-elements {
+/* / main 영역 / */
+.askBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
+.lch-ask-topcontainer {
   width: 1200px;
   height: 100%;
   display: flex;
@@ -31,50 +42,229 @@ footer{
   align-items: center;
 }
 
-/* 자격증 큰 글씨 */
-.lch-askDetail-title {
+/* / 개발 큰 글씨 / */
+.lch-ask-title {
   font-size: 50px;
   margin: 50px;
 }
 
-.lch-askDetail-tag-btn:hover {
-  background-color: #e7d4d7;
+/* / 개발 태그 버튼 담은 박스 / */
+.lch-ask-tag {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
+/* / 개발 태그 버튼 / */
+.lch-ask-tag-btn {
+  border: 1px solid #D96073;
+  color: #D96073;
+  background: none;
+  width: 170px;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
 
-/* 선택된 버튼 */
-.lch-askDetail-select {
+/* / 선택된 버튼 / */
+.lch-ask-select {
   background: #D96073;
   color: white;
 }
 
-/* 자격증 카테고리 버튼 담은 박스 */
-.lch-askDetail-category {
+/* / 개발 카테고리 버튼 담은 박스 / */
+.lch-ask-category {
+  border: none;
   width: 100%;
-  height: 45px;
   display: flex;
 }
 
-/* 자격증 카테고리 버튼 */
-.lch-askDetail-category-btn {
+/* / 개발 카테고리 버튼 */
+.lch-category-btn {
   width: 100%;
   border-radius: 0;
-  border:none;
+  border: none;
   padding: 5px;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* 준혁님 코드 테스트 css 적용 */
-.lch-askDetail-test{
-  border: 1px solid black;
+.lch-ask-tag-btn:hover {
+  background-color: #e7d4d7;
+}
+
+
+/* 선택된 버튼 */
+.lch-ask-select {
+  background: #D96073;
+  color: white;
+}
+
+/* 개발 카테고리 버튼 담은 박스 */
+.lch-ask-category {
   width: 100%;
-  height: 100px;
+  height: 45px;
+  display: flex;
+}
+
+/* 개발 카테고리 버튼 */
+.lch-ask-category-btn {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 글 제목 및 정보보 */
+.lch-ask-text-total {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  /* 좌우 넓이 추가 */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+/* 본문 헤더더 */
+.ask-text-header {
+  margin-bottom: 20px;
+}
+
+/* 본문 제목목 */
+.lch-ask-text-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* 본문 상단 태그그 */
+.lch-ask-text-tag {
+  background-color: #D96073;
+  /* 변경된 색상 */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 본문 내용용 */
+.lch-ask-text-textbody {
+  border: 1px solid #ddd;
+  height: 800px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  /* 좌우 넓이 추가 */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* 본문 작성자자 프로필 */
+.ask-text-profile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.lch-ask-text-author {
+  padding-left: 10px;
+}
+
+/* 본문 하단 태그그 */
+.lch-ask-text-bottom-tag {
+  background-color: #DFDFDF;
+  /* 변경된 색상 */
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*  본문 모니터, 댓글, 공유수수  */
+.Detail-content {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #DFDFDF;
+  padding: 20px;
+  width: 800px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#Detail-moniter-img {
+  height: 30px;
+  width: 30px;
+}
+
+#Detail-monitercount,
+#Detail-viewcount,
+#Detail-sharecount {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+#Detail-share-img,
+#Detail-view-img {
+  height: 30px;
+  width: 35px;
+  padding-left: 100px;
+}
+
+/* 드롭다운 */
+.Detail-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Detail-dropdown-img {
+  position: relative;
+  padding-left: 100px;
+  cursor: pointer;
+  width: 40px;
+  /* 이미지 크기 설정 */
+  height: 40px;
+}
+
+.Detail-dropdown-menu {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.Detail-dropdown-menu>a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.Detail-dropdown-menu a:hover {
+  background-color: #f2f2f2;
 }
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
-.lch-askDetail-comment-box{
+.lch-askDetail-comment-box {
   width: 100%;
   height: 100%;
   display: flex;
@@ -82,13 +272,13 @@ footer{
 }
 
 /* 총 댓글 수 표시 */
-.lch-askDetail-comment-count{
+.lch-askDetail-comment-count {
   font-size: 25px;
   margin: 10px;
 }
 
 /* 댓글 입력칸, 올리기 버튼이 담긴 박스 */
-.lch-askDetail-comment-input{
+.lch-askDetail-comment-input {
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -99,7 +289,7 @@ footer{
 }
 
 /* 댓글 작성 창 */
-#comment-input{
+#comment-input {
   width: 100%;
   height: 50px;
   margin: 20px;
@@ -107,7 +297,7 @@ footer{
 }
 
 /* 댓글 올리기 버튼 */
-.lch-askDetail-add-btn{
+.lch-askDetail-add-btn {
   width: 80px;
   height: 100%;
   font-size: 20px;
@@ -118,7 +308,7 @@ footer{
 }
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
-.lch-askDetail-comment-show{
+.lch-askDetail-comment-show {
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -129,7 +319,7 @@ footer{
 }
 
 /* 작성자 */
-.lch-askDetail-commnet-author{
+.lch-askDetail-commnet-author {
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -137,14 +327,14 @@ footer{
 }
 
 /* 작성된 댓글 */
-.lch-askDetail-comment-section{
+.lch-askDetail-comment-section {
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
-.lch-askDetail-comment-info{
+.lch-askDetail-comment-info {
   font-size: 15px;
   color: #606060;
   margin: 0px 0px 20px 15px;
@@ -155,6 +345,6 @@ footer{
 /* 모니터 */
 .lch-askDetail-comment-date,
 .lch-askDetail-comment-views,
-.lch-askDetail-comment-monitor{
+.lch-askDetail-comment-monitor {
   padding: 10px;
 }

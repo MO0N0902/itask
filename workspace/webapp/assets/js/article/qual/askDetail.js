@@ -10,6 +10,43 @@ tagBtns.forEach((tagBtn) => {
   });
 });
 
+
+// 게시글 모니터
+let count = 0;
+
+const img = document.getElementById('Detail-moniter-img')
+const countplus = document.getElementById('Detail-monitercount')
+
+img.addEventListener('click',function(){
+  if(count===0){
+    count++;
+  }else{
+    count--;
+  }
+  countplus.textContent = count;
+})
+
+// 댓글 모니터
+let commentCnt = 0;
+
+const monitorClk = document.querySelector('.lch-askDetail-comment-cnt');
+const commentMPlus = document.querySelector('lch-askDetail-comment-monitor-num');
+
+monitorClk.addEventListener('click',function(){
+  if(commentCnt===0){
+    commentCnt++;
+  }else{
+    commentCnt--;
+  }
+  commentMPlus.textContent += commentCnt;
+})
+
+
+function Dropdown() {
+  const menu = document.getElementById('dropdownMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
 // 나중에 바꿔주시면 됩니다!
