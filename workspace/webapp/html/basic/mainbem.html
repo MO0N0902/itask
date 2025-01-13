@@ -4,26 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="/workspace/webapp/assets/css/basic/mainbem.css">
+  <script defer src="/workspace/webapp/assets/js/basic/mainbem.js"></script>
+  <title>Banner Slider</title>
 </head>
 
 <body>
   <div class="main-outer">
-    <div class="main-inner-list">
-      <div class="main-inner">
-        <div class="banner-img">
-          <a href="#" class="benner-no1">
-            <img src="/workspace/webapp/assets/img/hidden 4.png" alt="User 1" class="bannermall">
-            <span class="best-img-text best-img-box">
-              java
-            </span>
-            </
-          </a>
-        </div>
+    <div id="banner-slider" class="slider">
+      <div class="banner-item">
+        <img src="/workspace/webapp/assets/img/hidden4.png" alt="Banner 1" class="bannermall">
+        <span class="banner-img-text">Banner Text 1</span>
+      </div>
+      <div class="banner-item">
+        <img src="/workspace/webapp/assets/img/hidden4.png" alt="Banner 2" class="bannermall">
+        <span class="banner-img-text">Banner Text 2</span>
+      </div>
+      <div class="banner-item">
+        <img src="/workspace/webapp/assets/img/hidden4.png" alt="Banner 3" class="bannermall">
+        <span class="banner-img-text">Banner Text 3</span>
       </div>
     </div>
-  </div>
-
+    <div class="banner-controls">
+      <button class="banner-left">◀</button>
+      <button class="banner-right">▶</button>
+    </div>
   </div>
 </body>
 
