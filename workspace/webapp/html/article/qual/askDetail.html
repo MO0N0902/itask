@@ -14,7 +14,7 @@
   <header>header area</header>
   ``
   <!-- 메인 영역 -->
-  <main class="itaskBox">
+  <main class="itAskBox">
     <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
     <article class="lch-askDetail-elements">
       <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
@@ -24,7 +24,7 @@
         <!-- 자격증 상위 카테고리 -->
         <div class="lch-askDetail-category">
           <button class="lch-askDetail-category-btn" onclick="location.href='./guide/infoSec.html'">시험안내</button>
-          <button class="lch-askDetail-category-btn lch-askDetail-select" onclick="location.href='./askDetail.html'">질문</button>
+          <button class="lch-askDetail-category-btn lch-askDetail-select" onclick="location.href='./ask.html'">질문</button>
           <button class="lch-askDetail-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
         </div>
         <!-- 자격증 태그 버튼 -->
@@ -34,7 +34,7 @@
           <button class="lch-askDetail-tag-btn">정보처리</button>
           <button class="lch-askDetail-tag-btn">네트워크관리사</button>
           <button class="lch-askDetail-tag-btn">리눅스마스터</button>
-          <button class="lch-askDetail-tag-btn">SQLD</button>`
+          <button class="lch-askDetail-tag-btn">SQLD</button>
         </div>
       </div>
       <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
@@ -44,14 +44,14 @@
         <div class="askDetail-text-header">
           <span class="lch-askDetail-text-tag">정보보안</span>
           <div class="lch-askDetail-text-title">게시물 제목 예시</div>
-          <div class="askDetail-text-profile">
+          <div class="lch-askDetail-text-profile">
             <img src="./../../../assets/img/profile.png" alt="">
             <span class="lch-askDetail-text-author"><b>27inch</b> 문준혁🏅</span>
           </div>
           <div class="lch-askDetail-text-date">2025-01-09 00:00</div>
         </div>
         <!-- 본문 메인인 -->
-        <img src="./../../../assets/img/infoSec.png" alt="자격증 이미지" class="">
+        <img src="./../../../assets/img/qualImg.png" alt="자격증 이미지" class="lch-askDetail-qual-img">
         <article class="lch-askDetail-text-textbody">
           본문내용1 본문내용1
         </article>
@@ -62,7 +62,7 @@
           <span class="lch-askDetail-text-bottom-tag">질문</span>
           <span class="lch-askDetail-text-bottom-tag">정보보안</span>
           <!-- 본문 모니터, 댓글, 공유수 -->
-          <div class="Detail-content">
+          <div class="lch-detail-content">
             <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
             <span id="Detail-monitercount">0</span>
             <img src="./../../../assets/img/view.png" alt="조회수" id="Detail-view-img">
@@ -70,10 +70,10 @@
             <img src="./../../../assets/img/share.png" alt="공유수" id="Detail-share-img">
             <span id="Detail-sharecount">0</span>
             <!-- 본문 수정삭제 드롭다운-->
-            <div class="Detail-dropdown">
-              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="Detail-dropdown-img"
+            <div class="lch-detail-dropdown">
+              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-detail-dropdown-img"
                 onclick="Dropdown()">
-              <div class="Detail-dropdown-menu" id="dropdownMenu">
+              <div class="lch-detail-dropdown-menu" id="dropdownMenu">
                 <a href="#">수정</a>
                 <a href="#">삭제</a>
               </div>
@@ -105,7 +105,7 @@
               <span class="lch-askDetail-comment-views">조회수 1000+</span>
               <span class="lch-askDetail-comment-monitor">
                 <img src="./../../../assets/img/monitor.png" alt="사진오류" class="lch-askDetail-comment-cnt"> 
-                <span class="lch-askDetail-comment-monitor-num">100</span>
+                <span id="askDetail-comment-monitor-num" class="lch-askDetail-comment-monitor-num">100</span>
               </span>
             </div>
           </div>

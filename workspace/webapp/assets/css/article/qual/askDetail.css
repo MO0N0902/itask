@@ -14,7 +14,7 @@ footer {
 }
 
 /* main 영역 */
-.itaskBox {
+.itAskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -123,7 +123,7 @@ footer {
 }
 
 /* 본문 헤더더 */
-.askDetail-text-header {
+.lch-askDetail-text-header {
   margin-bottom: 20px;
 }
 
@@ -161,7 +161,7 @@ footer {
 }
 
 /* 본문 작성자자 프로필 */
-.askDetail-text-profile {
+.lch-askDetail-text-profile {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -185,8 +185,13 @@ footer {
   cursor: pointer;
 }
 
+/* 게시글 내 사진 */
+.lch-askDetail-qual-img{
+  margin: 10px 20px;
+}
+
 /*  본문 모니터, 댓글, 공유수수  */
-.Detail-content {
+.lch-detail-content {
   display: flex;
   margin: auto;
   align-items: center;
@@ -218,12 +223,12 @@ footer {
 }
 
 /* 드롭다운 */
-.Detail-dropdown {
+.lch-detail-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.Detail-dropdown-img {
+.lch-detail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
@@ -232,7 +237,7 @@ footer {
   height: 40px;
 }
 
-.Detail-dropdown-menu {
+.lch-detail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -242,7 +247,7 @@ footer {
   border-radius: 5px;
 }
 
-.Detail-dropdown-menu>a {
+.lch-detail-dropdown-menu>a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
@@ -250,7 +255,7 @@ footer {
   cursor: pointer;
 }
 
-.Detail-dropdown-menu a:hover {
+.lch-detail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 

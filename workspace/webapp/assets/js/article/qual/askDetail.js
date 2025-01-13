@@ -12,35 +12,38 @@ tagBtns.forEach((tagBtn) => {
 
 
 // 게시글 모니터
-let count = 0;
+let count = -1;
 
 const img = document.getElementById('Detail-moniter-img')
 const countplus = document.getElementById('Detail-monitercount')
 
 img.addEventListener('click',function(){
-  if(count===0){
-    count++;
+  if(count===-1){
+    count = 1;
   }else{
-    count--;
+    count = -1;
   }
-  countplus.textContent = count;
+  countplus.textContent = parseInt(countplus.textContent)+count;
 })
 
 // 댓글 모니터
-let commentCnt = 0;
+let commentCnt = -1;
 
 const monitorClk = document.querySelector('.lch-askDetail-comment-cnt');
-const commentMPlus = document.querySelector('lch-askDetail-comment-monitor-num');
+//lch-askDetail-comment-monitor-num
+const commentMPlus = document.getElementById('askDetail-comment-monitor-num');
+
+console.log(monitorClk);
+console.log(commentMPlus);
 
 monitorClk.addEventListener('click',function(){
-  if(commentCnt===0){
-    commentCnt++;
+  if(commentCnt===-1){
+    commentCnt = 1;
   }else{
-    commentCnt--;
+    commentCnt = -1;
   }
-  commentMPlus.textContent += commentCnt;
+  commentMPlus.textContent = parseInt(commentMPlus.textContent)+commentCnt;
 })
-
 
 function Dropdown() {
   const menu = document.getElementById('dropdownMenu');
@@ -94,8 +97,10 @@ function addComment() {
 
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
-    commentMonitorNum.classList.add('lch-askDetail-comment-monitor-num');
+    //askDetail-comment-monitor-num
+    commentMonitorNum.setAttribute('id', 'askDetail-comment-monitor-num');
     commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
+    
 
     //모니터 이미지
     const monitorImg = document.createElement('img');
