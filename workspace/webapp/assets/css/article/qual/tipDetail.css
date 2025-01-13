@@ -25,7 +25,7 @@ footer {
 
 
 /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-.lch-askDetail-topcontainer {
+.lch-tipDetail-topcontainer {
   width: 1200px;
   height: 100%;
   display: flex;
@@ -34,20 +34,20 @@ footer {
 }
 
 /* / 개발 큰 글씨 / */
-.lch-askDetail-title {
+.lch-tipDetail-title {
   font-size: 50px;
   margin: 50px;
 }
 
 /* / 개발 태그 버튼 담은 박스 / */
-.lch-askDetail-tag {
+.lch-tipDetail-tag {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 /* / 개발 태그 버튼 / */
-.lch-askDetail-tag-btn {
+.lch-tipDetail-tag-btn {
   border: 1px solid #D96073;
   color: #D96073;
   background: none;
@@ -59,13 +59,13 @@ footer {
 }
 
 /* / 선택된 버튼 / */
-.lch-askDetail-select {
+.lch-tipDetail-select {
   background: #D96073;
   color: white;
 }
 
 /* / 개발 카테고리 버튼 담은 박스 / */
-.lch-askDetail-category {
+.lch-tipDetail-category {
   border: none;
   width: 100%;
   display: flex;
@@ -82,26 +82,26 @@ footer {
   cursor: pointer;
 }
 
-.lch-askDetail-tag-btn:hover {
+.lch-tipDetail-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-.lch-askDetail-select {
+.lch-tipDetail-select {
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-.lch-askDetail-category {
+.lch-tipDetail-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.lch-askDetail-category-btn {
+.lch-tipDetail-category-btn {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -112,7 +112,7 @@ footer {
 }
 
 /* 글 제목 및 정보보 */
-.lch-askDetail-text-total {
+.lch-tipDetail-text-total {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px;
@@ -123,12 +123,12 @@ footer {
 }
 
 /* 본문 헤더더 */
-.lch-askDetail-text-header {
+.lch-tipDetail-text-header {
   margin-bottom: 20px;
 }
 
 /* 본문 제목목 */
-.lch-askDetail-text-title {
+.lch-tipDetail-text-title {
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -137,7 +137,7 @@ footer {
 }
 
 /* 본문 상단 태그그 */
-.lch-askDetail-text-tag {
+.lch-tipDetail-text-tag {
   background-color: #D96073;
   /* 변경된 색상 */
   color: white;
@@ -148,7 +148,7 @@ footer {
 }
 
 /* 본문 내용용 */
-.lch-askDetail-text-textbody {
+.lch-tipDetail-text-textbody {
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -161,7 +161,7 @@ footer {
 }
 
 /* 본문 작성자자 프로필 */
-.lch-askDetail-text-profile {
+.lch-tipDetail-text-profile {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -169,12 +169,12 @@ footer {
   padding-top: 20px;
 }
 
-.lch-askDetail-text-author {
+.lch-tipDetail-text-author {
   padding-left: 10px;
 }
 
 /* 본문 하단 태그그 */
-.lch-askDetail-text-bottom-tag {
+.lch-tipDetail-text-bottom-tag {
   background-color: #DFDFDF;
   /* 변경된 색상 */
   color: #333;
@@ -186,7 +186,7 @@ footer {
 }
 
 /* 게시글 내 사진 */
-.lch-askDetail-qual-img{
+.lch-tipDetail-qual-img{
   margin: 10px 20px;
 }
 
@@ -260,7 +260,7 @@ footer {
 }
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
-.lch-askDetail-comment-box {
+.lch-tipDetail-comment-box {
   width: 100%;
   height: 100%;
   display: flex;
@@ -268,13 +268,13 @@ footer {
 }
 
 /* 총 댓글 수 표시 */
-.lch-askDetail-comment-count {
+.lch-tipDetail-comment-count {
   font-size: 25px;
   margin: 10px;
 }
 
 /* 댓글 입력칸, 올리기 버튼이 담긴 박스 */
-.lch-askDetail-comment-input {
+.lch-tipDetail-comment-input {
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -293,7 +293,7 @@ footer {
 }
 
 /* 댓글 올리기 버튼 */
-.lch-askDetail-add-btn {
+.lch-tipDetail-add-btn {
   width: 80px;
   height: 100%;
   font-size: 20px;
@@ -304,7 +304,7 @@ footer {
 }
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
-.lch-askDetail-comment-show {
+.lch-tipDetail-comment-show {
   width: 100%;
   height: 100%;
   border: 1px solid #606060;
@@ -315,7 +315,7 @@ footer {
 }
 
 /* 작성자 */
-.lch-askDetail-commnet-author {
+.lch-tipDetail-commnet-author {
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -323,14 +323,14 @@ footer {
 }
 
 /* 작성된 댓글 */
-.lch-askDetail-comment-section {
+.lch-tipDetail-comment-section {
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
-.lch-askDetail-comment-info {
+.lch-tipDetail-comment-info {
   font-size: 15px;
   color: #606060;
   margin: 0px 0px 20px 15px;
@@ -339,8 +339,8 @@ footer {
 /* 작성된 시간 */
 /* 조회수 */
 /* 모니터 */
-.lch-askDetail-comment-date,
-.lch-askDetail-comment-views,
-.lch-askDetail-comment-monitor {
+.lch-tipDetail-comment-date,
+.lch-tipDetail-comment-views,
+.lch-tipDetail-comment-monitor {
   padding: 10px;
 }
