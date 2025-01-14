@@ -12,7 +12,7 @@ header {
 }
 
 /* main 영역 */
-.contentsBox {
+.itAskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -54,10 +54,26 @@ header {
   cursor: pointer;
 }
 
+/* 버튼 밖에 a 태그 사용하는 방법 */
+.bjs-contents-category-btn>a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: black; 
+  padding-top:5px;
+}
+
 /* 회원가입 태그 */
 .bjs-contents-tag {
   display: flex;
   justify-content: center;
+}
+
+.bjs-contents-tag-btn>a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
 }
 
 /* 회원가입 태그 버튼 */
