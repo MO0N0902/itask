@@ -1,7 +1,16 @@
-/* 공통 스타일 */
-body {
+/* 기본 스타일 */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
 
 a {
@@ -20,6 +29,11 @@ img {
   height: auto;
 }
 
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
 /* 헤더 스타일 */
 .header-box {
   background-color: #D96073;
@@ -34,7 +48,6 @@ img {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  height: 60%; 
 }
 
 /* 로고 */
@@ -46,7 +59,7 @@ img {
 .search-box {
   flex: 0 1 40%;
   max-width: 500px;
-  margin-right: 1rem; 
+  margin-right: 1rem;
   display: flex;
   align-items: center;
 }
@@ -93,7 +106,7 @@ img {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 .write-box .icon {
@@ -131,16 +144,17 @@ img {
 .navbar-box {
   background-color: #ac394b;
   padding: 0.5rem 0;
-  height: 40%; 
+  /* width: 1200px;
+  margin: auto; */
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   padding: 0 1rem;
   margin-left: 2rem;
-} 
+}
 
 .navbar-nav {
   display: flex;

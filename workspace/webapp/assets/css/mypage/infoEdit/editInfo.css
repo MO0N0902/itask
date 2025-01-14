@@ -131,3 +131,11 @@
   color:#D96073;
   font-weight: bold;
 }
+/* 회원탈퇴 버튼 */
+#idid{
+  color: white;
+}
+#idid:hover{
+  color:#D96073;
+  font-weight: bold;
+}
