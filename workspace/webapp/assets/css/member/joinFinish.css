@@ -1,5 +1,6 @@
 /* 회원가입 페이지 2/3 : 회원정보 입력*/
 *{ padding: 0; margin: 0;}
+<<<<<<< HEAD
 .itAskBox{
   width: 1200px;
   margin: auto;
@@ -13,11 +14,27 @@
   width: 370px;
   display: block;
   margin: 200px auto 50px;
+=======
+
+.itAskBox{
+  margin: 200px auto;
+  text-align: center;
+  color: #606060;
+  /* border: 1px solid #D96073; */
+}
+
+/* 로고 */
+.logo{
+  width: 370px;
+  display: block;
+  margin: 20px auto;
+>>>>>>> keh
 }
 .itAskBox>a>img{
   width: 100%;
 }
 .itAskBox>p{
+<<<<<<< HEAD
   font-size: 40px;
   margin-bottom: 50px;
 }
@@ -47,11 +64,27 @@ width: 486px;
 .lsa-join-infoBtn{
   width: 486px;
   height: 70px;
+=======
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.itAskBox>p>span{
+  font-size: 16px;
+}
+
+/* 로그인 버튼 */
+.lsa-joinFinish-login{
+  width: 486px;
+  height: 70px;
+  display: block;
+  margin: auto;
+>>>>>>> keh
   background-color: #D96073;
   color: white;
   font-size: 20px;
   border: none;
   border-radius: 50px;
+<<<<<<< HEAD
   /* text-decoration: none; */
   position: absolute;
   right: 0px;
@@ -59,4 +92,14 @@ width: 486px;
   justify-content: center;
   align-items: center;
   display: flex;
+=======
+  text-align: center;
+  text-decoration: none;
+  align-content: center;
+}
+.lsa-joinFinish-login:hover{
+  color: #D96073;
+  background-color: white;
+  border: 1px solid #D96073;
+>>>>>>> keh
 }

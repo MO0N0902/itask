@@ -2,14 +2,22 @@ const tagBtns = document.querySelectorAll('.lch-tipDetail-tag-btn');
 
 tagBtns.forEach((tagBtn) => {
   tagBtn.addEventListener('click', function () {
+<<<<<<< HEAD
     // 모든 버튼에서 lch-ask-select 클래스 제거
     tagBtns.forEach((btn) => btn.classList.remove('lch-tipDetail-select'));
 
     // 클릭된 버튼에 lch-ask-select 클래스 추가
+=======
+    // 모든 버튼에서 lch-tipDetail-select 클래스 제거
+    tagBtns.forEach((btn) => btn.classList.remove('lch-tipDetail-select'));
+
+    // 클릭된 버튼에 lch-tipDetail-select 클래스 추가
+>>>>>>> keh
     tagBtn.classList.add('lch-tipDetail-select');
   });
 });
 
+<<<<<<< HEAD
 //게시글 모니터 버튼 누르면 1증가
 let count = -1;
 const img = document.getElementById('Detail-moniter-img');
@@ -42,6 +50,8 @@ postshare.addEventListener('click', function () {
 });
 
 
+=======
+>>>>>>> keh
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
 // 나중에 바꿔주시면 됩니다!
@@ -50,7 +60,11 @@ let commentCount = 1;
 function addComment() {
   const commentInput = document.getElementById('comment-input');
   const commentText = commentInput.value.trim();
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> keh
   // 댓글이 비어 있지 않으면
   if (commentText !== '') {
     // 새로운 댓글을 생성
@@ -62,7 +76,10 @@ function addComment() {
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
     commmentAuthor.classList.add('lch-tipDetail-commnet-author');
+<<<<<<< HEAD
     //lch-tipDetail-commnet-author
+=======
+>>>>>>> keh
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)
@@ -79,10 +96,19 @@ function addComment() {
     commentDate.classList.add('lch-tipDetail-comment-date');
     commentDate.textContent = "1시간 전" // 나중에 불러오는거 여기 추가
 
+<<<<<<< HEAD
+=======
+    // 조회수
+    const commentViews = document.createElement('span');
+    commentViews.classList.add('lch-tipDetail-comment-views');
+    commentViews.textContent = "조회수 316"; // 나중에 불러오는거 여기 추가
+
+>>>>>>> keh
     // 모니터 수, 이미지 박스
     const commentMonitor = document.createElement('span');
     commentMonitor.classList.add('lch-tipDetail-comment-monitor');
 
+<<<<<<< HEAD
 
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
@@ -117,12 +143,19 @@ function addComment() {
     commentmodify.classList.add('lch-tipDetail-comment-modify');
     commentmodify.textContent = "수정 ";
 
+=======
+    // 모니터 수
+    const commentMonitorNum = document.createElement('span');
+    commentMonitorNum.classList.add('lch-tipDetail-comment-monitor-num');
+    commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
+>>>>>>> keh
 
     //모니터 이미지
     const monitorImg = document.createElement('img');
     monitorImg.setAttribute('src', './../../../assets/img/monitor.png');
     monitorImg.setAttribute('alt', '사진오류');
 
+<<<<<<< HEAD
     let commentCnt = -1;
 
     monitorImg.addEventListener('click', function () {
@@ -138,6 +171,8 @@ function addComment() {
       }
     });
 
+=======
+>>>>>>> keh
     // 댓글을 댓글 섹션에 추가
     const commentSection = document.getElementById('comment-section');
     commentSection.appendChild(commentArea);
@@ -145,12 +180,20 @@ function addComment() {
     commentArea.appendChild(comment);
     commentArea.appendChild(commentInfo);
     commentInfo.appendChild(commentDate);
+<<<<<<< HEAD
     commentInfo.appendChild(commentMonitor);
     commentMonitor.appendChild(monitorImg);
     commentMonitor.appendChild(commentMonitorNum);
     commentInfo.appendChild(commentmodify);
     commentInfo.appendChild(commentdelete);
 
+=======
+    commentInfo.appendChild(commentViews);
+    commentInfo.appendChild(commentMonitor);
+    commentMonitor.appendChild(monitorImg);
+    commentMonitor.appendChild(commentMonitorNum);
+    
+>>>>>>> keh
     // 댓글 수 증가
     commentCount++;
 
@@ -159,7 +202,10 @@ function addComment() {
 
     // 입력창 비우기
     commentInput.value = '';
+<<<<<<< HEAD
     
+=======
+>>>>>>> keh
   } else {
     alert('댓글을 입력해주세요!');
   }

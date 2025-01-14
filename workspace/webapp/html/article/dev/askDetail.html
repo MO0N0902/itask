@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>개발발 글 상세페이지</title>
+<<<<<<< HEAD
   <link rel="stylesheet" href="./../../../assets/css/article/dev/askDetail.css">
   <script defer src="./../../../assets/js/article/dev/askDetail.js"></script>
 </head>
@@ -32,6 +33,38 @@
           <div class="mjh-askDetail-text-profile">
             <img src="./../../../assets/img/profile.png" alt="">
             <span class="mjh-askDetail-text-author"><b>27inch</b> 문준혁🏅</span>
+=======
+  <link rel="stylesheet" href="./../../../assets/css/article/sec/askDetail.css">
+  <script defer src="./../../../assets/js/article/sec/askDetail.js"></script>
+</head>
+<body>
+  <!-- 헤더 영역 -->
+  <header>header area</header>
+``
+  <!-- 메인 영역 -->
+  <main class="itaskBox">
+    <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+    <article class="mjh-askDetail-elements">
+      <!-- 자격증  -->
+      <main class="askBox">
+        <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+        <div class="mjh-ask-topcontainer">
+         <!-- 개발  -->
+          <span class="mjh-ask-title">개발</span>
+          <!-- 자격증 상위 카테고리 -->
+          <div class="mjh-ask-category">
+            <button class="mjh-category-btn mjh-ask-select">질문</button>
+              <button class="mjh-category-btn">꿀팁</button>
+          </div>
+          <!-- 자격증 태그 버튼 -->
+          <div class="mjh-ask-tag">
+            <button class="mjh-ask-tag-btn mjh-ask-select">전체</button>
+            <button class="mjh-ask-tag-btn">Java</button>
+            <button class="mjh-ask-tag-btn">HTML</button>
+            <button class="mjh-ask-tag-btn">CSS</button>
+            <button class="mjh-ask-tag-btn">JavaScript</button>
+            <button class="mjh-ask-tag-btn">Oracle</button>`
+>>>>>>> keh
           </div>
           <div class="mjh-askDetail-text-date">2025-01-09 00:00</div>
           <!-- 본문 메인인 -->
@@ -77,27 +110,103 @@
           <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
           <button onclick="addComment()" class="mjh-askDetail-add-btn">올리기</button>
         </div>
+<<<<<<< HEAD
+=======
+      </main>
+      <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
+        <!-- 본문 전체체 -->
+        <article class="mjh-ask-text-total" data-tag="Network">
+          <!-- 본문 헤더더 -->
+          <div class = "ask-text-header">
+            <span class="mjh-ask-text-tag">Network</span>
+            <div class="mjh-ask-text-title">게시물 제목 예시</div>
+            <div class="ask-text-profile">
+              <img src="./../../../assets/img/profile.png" alt="">
+              <span class="mjh-ask-text-author"><b>27inch</b> 문준혁🏅</span>
+            </div>
+            <div class="mjh-ask-text-date">2025-01-09 00:00</div>
+          </div>
+          <!-- 본문 메인인 -->
+          <article class="mjh-ask-text-textbody">
+            본문내용1 본문내용1
+          </article>
+          <!-- 본문 바텀텀 -->
+          <article class="mjh-ask-text-textbottom">
+            <!-- 본문 태그그 -->
+            <span class="mjh-ask-text-bottom-tag">보안</span>
+            <span class="mjh-ask-text-bottom-tag">질문</span>
+            <span class="mjh-ask-text-bottom-tag">Network</span>
+            <!-- 본문 모니터, 댓글, 공유수수 -->
+            <div class="Detail-content">
+              <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
+              <span id="Detail-monitercount">0</span>
+              <img src="./../../../assets/img/view.png" alt="조회수" id = "Detail-view-img">
+              <span id="Detail-viewcount">0</span>
+              <img src="./../../../assets/img/share.png" alt="공유유수" id = "Detail-share-img">
+              <span id="Detail-sharecount">0</span>
+              <!-- 본문 수정삭제 드롭다운운-->
+               <div class="Detail-dropdown">
+                  <img 
+                    src="./../../../assets/img/Container.png" 
+                    alt="드롭다운 이미지" 
+                    class="Detail-dropdown-img" 
+                    onclick="Dropdown()">
+                  <div class="Detail-dropdown-menu" id="dropdownMenu">
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </article>
+      <!-- 게시글 내용에 대한 댓글 부분 -->
+      <article class="mjh-askDetail-comment-box">
+
+        <!-- 총 댓글 수 -->
+        <div class="mjh-askDetail-comment-count">댓글 <span id="comment-count">1</span></div>
+        <!-- 댓글 작성 창 -->
+        <div class="mjh-askDetail-comment-input">
+          <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+          <button onclick="addComment()" class="mjh-askDetail-add-btn">올리기</button>
+        </div>
+>>>>>>> keh
 
         <!-- 작성된 댓글이 보여지는 리스트 창 -->
         <div id="comment-section">
           <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
           <div class="mjh-askDetail-comment-show">
+<<<<<<< HEAD
             <span class="mjh-askDetail-comment-author">27inch 문준혁🏅</span>
+=======
+            <span class="mjh-askDetail-commnet-author">27inch 문준혁🏅</span>
+>>>>>>> keh
             <div class="mjh-askDetail-comment-section"> 예시 댓글01 예시 댓글01 예시 댓글01 예시 댓글01</div>
             <!-- 작성된 날짜, 조회수, 모니터를 담은 박스 -->
             <div class="mjh-askDetail-comment-info">
               <!-- js으로 24시간 전이면 시간으로 이후는 몇일 전으로 31일 넘어가면 몇달 12개월 넘어가면 몇 년 -->
               <span class="mjh-askDetail-comment-date">14일전</span>
+<<<<<<< HEAD
               <span class="mjh-askDetail-comment-monitor">
                 <img src="./../../../assets/img/monitor.png" alt="사진오류"> 100+
               </span>
               <span class="mjh-askDetail-comment-modify">수정</span>
               <span class="mjh-askDetail-comment-delete">삭제</span>
+=======
+              <span class="mjh-askDetail-comment-views">조회수 1000+</span>
+              <span class="mjh-askDetail-comment-monitor">
+                <img src="./../../../assets/img/monitor.png" alt="사진오류"> 100+
+              </span>
+>>>>>>> keh
             </div>
           </div>
           <!-- --------------------------이만큼 추가돼야함^_^~-------------------- -->
         </div>
       </article>
+<<<<<<< HEAD
+=======
+
+    </article>
+>>>>>>> keh
   </main>
 </body>
 </html>
