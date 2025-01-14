@@ -3,42 +3,21 @@ const tagBtns = document.querySelectorAll('.lch-askDetail-tag-btn');
 tagBtns.forEach((tagBtn) => {
   tagBtn.addEventListener('click', function () {
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
     // 모든 버튼에서 lch-ask-select 클래스 제거
     tagBtns.forEach((btn) => btn.classList.remove('lch-askDetail-select'));
 
     // 클릭된 버튼에 lch-ask-select 클래스 추가
 =======
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
     // 모든 버튼에서 lch-askDetail-select 클래스 제거
     tagBtns.forEach((btn) => btn.classList.remove('lch-askDetail-select'));
 
     // 클릭된 버튼에 lch-askDetail-select 클래스 추가
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> keh
->>>>>>> main
-=======
->>>>>>> keh
->>>>>>> main
     tagBtn.classList.add('lch-askDetail-select');
   });
 });
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
 //게시글 모니터 버튼 누르면 1증가
 let count = -1;
 const img = document.getElementById('Detail-moniter-img');
@@ -54,10 +33,6 @@ img.addEventListener('click', function () {
 
 //수정삭제 드롭다운
 =======
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
 
 // 게시글 모니터
 let count = -1;
@@ -93,25 +68,13 @@ monitorClk.addEventListener('click',function(){
   commentMPlus.textContent = parseInt(commentMPlus.textContent)+commentCnt;
 })
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> keh
->>>>>>> main
-=======
->>>>>>> keh
->>>>>>> main
 function Dropdown() {
   const menu = document.getElementById('dropdownMenu');
   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
 //게시물 삭제
 const postDeletebtn = document.getElementById('postdelete');
 postDeletebtn.addEventListener('click', function () {
@@ -127,10 +90,6 @@ postshare.addEventListener('click', function () {
 
 =======
 >>>>>>> keh
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
 // 나중에 바꿔주시면 됩니다!
@@ -140,20 +99,10 @@ function addComment() {
   const commentInput = document.getElementById('comment-input');
   const commentText = commentInput.value.trim();
 <<<<<<< HEAD
-<<<<<<< HEAD
-  
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
 
 =======
   
 >>>>>>> keh
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
   // 댓글이 비어 있지 않으면
   if (commentText !== '') {
     // 새로운 댓글을 생성
@@ -166,18 +115,9 @@ function addComment() {
     const commmentAuthor = document.createElement('span');
     commmentAuthor.classList.add('lch-askDetail-commnet-author');
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     //lch-askDetail-commnet-author
 =======
 >>>>>>> keh
->>>>>>> main
-=======
-    //lch-askDetail-commnet-author
-=======
->>>>>>> keh
->>>>>>> main
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)
@@ -196,35 +136,17 @@ function addComment() {
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> main
-=======
->>>>>>> main
     // 조회수
     const commentViews = document.createElement('span');
     commentViews.classList.add('lch-askDetail-comment-views');
     commentViews.textContent = "조회수 316"; // 나중에 불러오는거 여기 추가
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> keh
->>>>>>> main
-=======
->>>>>>> keh
->>>>>>> main
     // 모니터 수, 이미지 박스
     const commentMonitor = document.createElement('span');
     commentMonitor.classList.add('lch-askDetail-comment-monitor');
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
 
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
@@ -280,24 +202,13 @@ function addComment() {
     commentmodify.textContent = "수정 ";
 
 =======
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
     //askDetail-comment-monitor-num
     commentMonitorNum.setAttribute('id', 'askDetail-comment-monitor-num');
     commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> keh
->>>>>>> main
-=======
->>>>>>> keh
->>>>>>> main
 
     //모니터 이미지
     const monitorImg = document.createElement('img');
@@ -305,11 +216,6 @@ function addComment() {
     monitorImg.setAttribute('alt', '사진오류');
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
     let commentCnt = -1;
 
     monitorImg.addEventListener('click', function () {
@@ -327,10 +233,6 @@ function addComment() {
 
 =======
 >>>>>>> keh
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
     // 댓글을 댓글 섹션에 추가
     const commentSection = document.getElementById('comment-section');
     commentSection.appendChild(commentArea);
@@ -339,11 +241,6 @@ function addComment() {
     commentArea.appendChild(commentInfo);
     commentInfo.appendChild(commentDate);
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> main
     commentInfo.appendChild(commentMonitor);
     commentMonitor.appendChild(monitorImg);
     commentMonitor.appendChild(commentMonitorNum);
@@ -351,23 +248,12 @@ function addComment() {
     commentInfo.appendChild(commentdelete);
 
 =======
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
     commentInfo.appendChild(commentViews);
     commentInfo.appendChild(commentMonitor);
     commentMonitor.appendChild(monitorImg);
     commentMonitor.appendChild(commentMonitorNum);
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 >>>>>>> keh
->>>>>>> main
-=======
->>>>>>> keh
->>>>>>> main
     // 댓글 수 증가
     commentCount++;
 
@@ -377,18 +263,9 @@ function addComment() {
     // 입력창 비우기
     commentInput.value = '';
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     
 =======
 >>>>>>> keh
->>>>>>> main
-=======
-    
-=======
->>>>>>> keh
->>>>>>> main
   } else {
     alert('댓글을 입력해주세요!');
   }
