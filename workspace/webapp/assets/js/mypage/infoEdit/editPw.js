@@ -7,12 +7,6 @@ const mark = document.querySelector(".mark"); // 이거는 눈있는 태그에 c
 
 let pwStatus = false; // 초기 상태: 비밀번호 숨김
 
-
-const input = document.querySelector('.keh-editPw-pw');
-const mark = document.querySelector('.mark');
-
-let pwStatus = false;
-
 // 비밀번호 눈 상태 바꾸기
 
 mark.addEventListener("click", () => {
