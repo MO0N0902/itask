@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 통합</title>
+    <link rel="stylesheet" href="./../../assets/css/admin/write.css">
+    <script defer src="./../../assets/js/admin/write.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="./../admin/basic/header.html" width="100%" height="300px" frameborder="0"
+            style="display: block"></iframe>
+    </header>
+    <main class="itAskBox">
+        <div class="notice">공지게시판 글쓰기</div>
+        <!-- 메인 -->
+        <!-- 카테고리 선택 -->
+        <div class="write-click">
+            <p class="write-title">카테고리 선택</p>
+            <div class="write-clickbox1">
+                <div class="write-button" data-category="전체"> 전체</div>
+                <div class="write-button" data-category="보안">보안</div>
+                <div class="write-button" data-category="자격증">자격증</div>
+            </div>
+            <div class="write-clickbox2">
+                <div class="write-button" data-category="질문">질문</div>
+                <div class="write-button" data-category="꿀팁">꿀팁</div>
+                <div class="write-button" data-category="개발">개발</div>
+            </div>
+            <!-- 제목 -->
+            <div class="write-title-section">
+                <input type="text" id="title" placeholder="제목 : 최소 8글자 이상 입력해주세요" minlength="8" required />
+            </div>
+            <!-- 글상자 -->
+            <div class="write-content-section">
+                <textarea id="content" placeholder="내용 : 최소 20글자 이상 입력해주세요" minlength="20" required></textarea>
+            </div>
+            <!-- 첨부파일 입력 -->
+            <div class="write-file">
+                <div class="file-up-container">
+                    <div class="file-upload-container">
+                        <div class="upload-box">
+                            <label for="file-upload">첨부파일 선택</label>
+                            <input type="file" id="file-upload" accept="image/*">
+                        </div>
+                        <!-- 업로드 버튼 -->
+                        <div class="upload-button">업로드</div>
+                    </div>
+                </div>
+                <!-- 첨부파일 안내 -->
+                <div class="file-upload-hint">첨부 파일은 자격증 글쓰기 페이지에서만 보여짐</div>
+                <!-- 글 작성하기 버튼 -->
+                <div class="submit-button">글 작성하기</div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="file-binbox"></div>
+</footer>
+
+</html>
