@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+}
+
+.itAskBox {
+  height: 2500px;
+  border: 1px solid black;
 }
 
 a {
@@ -217,6 +223,7 @@ main{
 /* 카테고리 */
 .write-click {
   text-align: center;
+  position: relative;
 }
 
 .write-title {
@@ -278,19 +285,35 @@ main{
 }
 
 /* 첨부파일 */
+.write-file {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid rebeccapurple; */
+  line-height: 12px;
+}
+
+/* .file-up-container {
+  justify-content: space-between;
+} */
+
 .file-upload-container {
-  position: absolute;
-  width: 380px;
+  /* position: absolute; */
+  width: 100%;
   height: 40px;
   left: 263px;
   top: 959px;
-  background: #FFFFFF;
+  /* background: #FFFFFF;
   border: 1px solid #DFDFDF;
-  border-radius: 50px;
+  border-radius: 50px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+
 }
 
 .file-upload-container label {
@@ -301,31 +324,42 @@ main{
 
 .file-upload-container input[type="file"] {
   display: none;
+  width: 80%;
 }
 
-.write-file {
+
+
+.upload-box{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
+  padding-left: 30px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
 }
 
 /* 첨부파일 안내 텍스트 */
 .file-upload-hint {
-  position: absolute;
+  /* position: absolute; */
   left: 268px;
   top: 1015px;
   font-size: 14px;
   color: #000000;
+  text-align: left;
+  padding: 50px 30px;
 }
 
 /* 업로드 버튼 */
 .upload-button {
-  position: absolute; 
+  /* position: absolute;  */
   width: 158.53px;
   height: 45.87px;
-  left: 773.47px;
-  top: 955.13px;
+  /* left: 773.47px;
+  top: 955.13px; */
   background: #FFFFFF;
   border: 1px solid #D96073;
   border-radius: 30px;
@@ -338,11 +372,11 @@ main{
 }
 /* 글 작성하기 버튼 */
 .submit-button {
-  position: absolute;
-  width: 662px;
+  /* position: absolute; */
+  width: 100%;
   height: 45px;
-  left: 270px;
-  top: 1050px;
+  /* left: 270px;
+  top: 1050px; */
   background: #D96073;
   border-radius: 30px;
   font-size: 14px;
@@ -353,6 +387,17 @@ main{
   cursor: pointer;
 }
 
+.submit-button:hover {
+  border: 1px solid #D96073;
+  color: #D96073;
+  background-color: #FFFFFF;
+}
+
 footer {
   margin-top: 60px;
+}
+
+.file-box{
+  width: 1200px;
+  height: 60px;
 }
