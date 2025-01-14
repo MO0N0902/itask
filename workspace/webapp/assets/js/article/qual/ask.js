@@ -42,9 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
       posts.forEach((post) => {
         const postTag = post.dataset.tag; // 게시글의 data-tag 값
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log(postTag);
 =======
 <<<<<<< HEAD
+=======
+        console.log(postTag);
+>>>>>>> keh
+>>>>>>> main
+=======
 =======
         console.log(postTag);
 >>>>>>> keh

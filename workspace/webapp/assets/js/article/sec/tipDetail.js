@@ -49,13 +49,19 @@ function addComment() {
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
 <<<<<<< HEAD
+<<<<<<< HEAD
     commmentAuthor.classList.add('mjh-tipDetail-commnet-author');
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
     commmentAuthor.classList.add('mjh-tipDetail-comment-author');
 =======
     commmentAuthor.classList.add('mjh-tipDetail-commnet-author');
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 

@@ -5,11 +5,17 @@
 }
 /* header, footer 영역 (임시) */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 
 /* main 영역 */
 .itAskBox {
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
 header,
@@ -23,6 +29,10 @@ footer{
 /* main 영역 */
 .ittipBox {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -34,11 +44,17 @@ footer{
   align-items: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
   .mjh-tipDetail-topcontainer {
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
   /* / main 영역 / */
@@ -54,6 +70,10 @@ footer{
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
   .mjh-tip-topcontainer {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -66,13 +86,19 @@ footer{
   
   /* / 개발 큰 글씨 / */
 <<<<<<< HEAD
+<<<<<<< HEAD
   .mjh-tip-title {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   .mjh-tipDetail-title {
 =======
   .mjh-tip-title {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     font-size: 50px;
     margin: 50px;
@@ -80,13 +106,19 @@ footer{
   
   /* / 개발 태그 버튼 담은 박스 / */
 <<<<<<< HEAD
+<<<<<<< HEAD
   .mjh-tip-tag {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   .mjh-tipDetail-tag {
 =======
   .mjh-tip-tag {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     display: flex;
     justify-content: center;
@@ -95,13 +127,19 @@ footer{
   
   /* / 개발 태그 버튼 / */
 <<<<<<< HEAD
+<<<<<<< HEAD
   .mjh-tip-tag-btn {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   .mjh-tipDetail-tag-btn {
 =======
   .mjh-tip-tag-btn {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     border: 1px solid #D96073;
     color: #D96073;
@@ -115,8 +153,11 @@ footer{
   
   /* / 선택된 버튼 / */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   .mjh-tipDetail-select {
     background: #D96073;
     color: white;
@@ -134,6 +175,9 @@ footer{
   /* / 개발 카테고리 버튼 */
   .mjh-tipDetail-category-btn {
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   .mjh-tip-select {
     background: #D96073;
@@ -149,6 +193,10 @@ footer{
   /* / 개발 카테고리 버튼 */
   .mjh-category-btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -162,13 +210,19 @@ footer{
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-tag-btn:hover {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-tag-btn:hover {
 =======
 .mjh-tip-tag-btn:hover {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   background-color: #e7d4d7;
 }
@@ -176,13 +230,19 @@ footer{
 
 /* 선택된 버튼 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-select {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-select {
 =======
 .mjh-tip-select {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   background: #D96073;
   color: white;
@@ -190,13 +250,19 @@ footer{
 
 /* 개발 카테고리 버튼 담은 박스 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-category {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-category {
 =======
 .mjh-tip-category {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   width: 100%;
   height: 45px;
@@ -205,13 +271,19 @@ footer{
 
 /* 개발 카테고리 버튼 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-category-btn {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-category-btn {
 =======
 .mjh-tip-category-btn {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   width: 100%;
   border-radius: 0;
@@ -223,14 +295,20 @@ footer{
 }
 /* 글 제목 및 정보보 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-text-total {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-total {
   width: 1200px;
 =======
 .mjh-tip-text-total {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -241,13 +319,19 @@ footer{
 }
 /* 본문 헤더더 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-header{
   margin-bottom: 20px;
 }
 /* 본문 제목목 */
 .mjh-tipDetail-text-title{
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
 .tip-text-header{
@@ -256,6 +340,10 @@ footer{
 /* 본문 제목목 */
 .mjh-tip-text-title{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -267,13 +355,19 @@ footer{
 }
 /* 본문 상단 태그그 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-text-tag {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-tag {
 =======
 .mjh-tip-text-tag {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   background-color: #D96073; /* 변경된 색상 */
   color: white;
@@ -284,13 +378,19 @@ footer{
 }
 /* 본문 내용용 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tip-text-textbody {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-textbody {
 =======
 .mjh-tip-text-textbody {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   border: 1px solid #ddd;
   height: 800px;
@@ -303,13 +403,19 @@ footer{
 }
 /* 본문 작성자자 프로필 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .tip-text-profile{
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-profile{
 =======
 .tip-text-profile{
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   display: flex;
   justify-items: center;
@@ -318,13 +424,19 @@ footer{
   padding-top: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-text-author{
   padding-left: 10px;
 }
 /* 본문 하단 태그그 */
 .mjh-tipDetail-text-bottom-tag {
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
 .mjh-tip-text-author{
@@ -333,6 +445,10 @@ footer{
 /* 본문 하단 태그그 */
 .mjh-tip-text-bottom-tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -346,13 +462,19 @@ footer{
 }
 /*  본문 모니터, 댓글, 공유수수  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Detail-content{
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-content{
 =======
 .Detail-content{
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   display: flex;
   margin: auto;
@@ -379,13 +501,19 @@ footer{
 }
 /* 드롭다운 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-dropdown {
   position: relative;
   display: inline-block;
 }
 .mjh-tipDetail-dropdown-img {
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
 .Detail-dropdown {
@@ -394,6 +522,10 @@ footer{
 }
 .Detail-dropdown-img {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 =======
 >>>>>>> keh
 >>>>>>> main
@@ -404,13 +536,19 @@ footer{
   height: 40px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Detail-dropdown-menu {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-dropdown-menu {
 =======
 .Detail-dropdown-menu {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   position: absolute;
   left: 150px;
@@ -421,13 +559,19 @@ footer{
   border-radius: 5px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Detail-dropdown-menu >a {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-dropdown-menu >a {
 =======
 .Detail-dropdown-menu >a {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   display: block;
   padding: 10px 40px;
@@ -436,13 +580,19 @@ footer{
   cursor: pointer;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .Detail-dropdown-menu a:hover {
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-dropdown-menu a:hover {
 =======
 .Detail-dropdown-menu a:hover {
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   background-color: #f2f2f2;
 }
@@ -450,13 +600,19 @@ footer{
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
 .mjh-tipDetail-comment-box{
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   width: 1200px;
 =======
   width: 100%;
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   height: 100%;
   display: flex;
@@ -502,13 +658,19 @@ footer{
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
 .mjh-tipDetail-comment-show{
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
   width: 1200px;
 =======
   width: 100%;
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   height: 100%;
   border: 1px solid #606060;
@@ -520,13 +682,19 @@ footer{
 
 /* 작성자 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mjh-tipDetail-commnet-author{
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
 .mjh-tipDetail-comment-author{
 =======
 .mjh-tipDetail-commnet-author{
 >>>>>>> keh
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
   padding: 20px;
   color: #606060;
@@ -537,8 +705,14 @@ footer{
 /* 작성된 댓글 */
 .mjh-tipDetail-comment-section{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+  width: 1200px;
+=======
+>>>>>>> keh
+>>>>>>> main
+=======
   width: 1200px;
 =======
 >>>>>>> keh
@@ -566,7 +740,12 @@ footer{
 }
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> keh
+>>>>>>> main
 =======
 }
 >>>>>>> keh
