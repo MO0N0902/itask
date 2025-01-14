@@ -171,3 +171,29 @@ header {
 .bjs-tip-post-author {
   cursor: pointer;
 }
+
+.pagination {
+  text-align: center;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.pagination a {
+  align-content: center;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 30px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #606060;
+  border: 1px solid #DFDFDF;
+  cursor: pointer;
+}
+.pagination a:hover {
+  font-weight: bold;
+  background-color: #D96073;
+  color: white;
+  border: 1px solid white;
+  transition: .3s;
+}

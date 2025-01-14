@@ -1,4 +1,4 @@
-/* 내정보 수정하기 - 4.핸드폰번호수정 */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              /* 내정보 수정하기 - 4.핸드폰번호수정 */
 *{  padding: 0; margin: 0; list-style: none; }
 
 .itAskBox{
@@ -79,10 +79,25 @@
   background-color: white;
   border: 1px solid #D96073;
 }
-
 /* 인증번호 아래 확인되었습니다 문구 */
 .keh-editPhoneNum-checkInfo{
   text-align: left;
   padding: 10px 30px;
   color : #22A309;
+}
+.keh-editPhoneNum-saveBtn{
+  width: 486px;
+  height: 70px;
+  color: white;
+  background-color: #D96073;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.keh-editPhoneNum-saveBtn:hover{
+  color: #D96073;
+  background-color: white;
+  border: 1px solid #D96073;
+  font-weight: bold;
 }

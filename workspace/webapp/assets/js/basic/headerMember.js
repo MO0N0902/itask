@@ -19,3 +19,25 @@ function increaseMonitorLevel() {
 }
 
 document.getElementById("user-name").textContent = "지지베베님";
+
+// 통합검색
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchButton = document.querySelector(".search-logo"); 
+      const searchInput = document.querySelector(".search-input"); 
+
+      searchButton.addEventListener("click", () => {
+        const query = searchInput.value.trim(); 
+        if (query) {
+          location.href =`/workspace/webapp/html/totalSearch/totalArticle.html`;
+        } else {
+          alert("검색어를 입력하세요.");
+        }
+      });
+
+      searchInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault(); 
+          searchButton.click(); 
+        }
+      });
+    });

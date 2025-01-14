@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>멘토회원 목록</title>
     <link rel="stylesheet" href="./../../assets/css/admin/mentoMember.css">
+    <script defer src="./../../assets/js/admin/mentoMember.js"></script>
 </head>
 
 <body>
@@ -13,15 +14,15 @@
         <div class="head">
             <div class="title">전체회원 목록</div>
             <div class="buttons">
-                <button>경고주기</button>
-                <button>삭제</button>
+                <button id="warnButton">경고주기</button>
+                <button id="deleteButton">삭제</button>
             </div>
         </div>
         <hr>
         <div class="memColumn header">
-            <input type="checkbox">
+            <input type="checkbox" id="selectAll">
             <p>등급</p>
-            <p>아이디</p>
+            <p class="user-id">아이디</p>
             <p>닉네임</p>
             <p>뱃지</p>
             <p>모니터</p>
@@ -30,9 +31,9 @@
         </div>
         <hr>
         <div class="memColumn">
-            <input type="checkbox">
+            <input type="checkbox" class="item-checkbox">
             <p>멘토</p>
-            <p>bbb123</p>
+            <p class="user-id">bbb123</p>
             <p>전문가</p>
             <p>🎇</p>
             <p>22inch 22m</p>
@@ -40,9 +41,9 @@
             <p>-</p>
         </div>
         <div class="memColumn">
-            <input type="checkbox">
+            <input type="checkbox" class="item-checkbox">
             <p>멘토</p>
-            <p>bbb123</p>
+            <p class="user-id">bbb123</p>
             <p>전문가</p>
             <p>🎇</p>
             <p>22inch 22m</p>
