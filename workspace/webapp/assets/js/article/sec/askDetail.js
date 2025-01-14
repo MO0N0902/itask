@@ -2,18 +2,6 @@ const tagBtns = document.querySelectorAll('.mjh-askDetail-tag-btn');
 
 tagBtns.forEach((tagBtn) => {
   tagBtn.addEventListener('click', function () {
-<<<<<<< HEAD
-    // 모든 버튼에서 bjs-ask-select 클래스 제거
-    tagBtns.forEach((btn) => btn.classList.remove('mjh-askDetail-select'));
-
-    // 클릭된 버튼에 bjs-ask-select 클래스 추가
-    tagBtn.classList.add('mjh-askDetail-select');
-  });
-});
-//모니터 버튼 누르면 1증가
-
-let count = -1;
-=======
     // 모든 버튼에서 mjh-askDetail-select 클래스 제거
     tagBtns.forEach((btn) => btn.classList.remove('mjh-askDetail-select'));
 
@@ -22,22 +10,11 @@ let count = -1;
   });
 });
 let count = 0;
->>>>>>> keh
 
 const img = document.getElementById('Detail-moniter-img')
 const countplus = document.getElementById('Detail-monitercount')
 
 img.addEventListener('click',function(){
-<<<<<<< HEAD
-  if(count===-1){
-    count = 1;
-  }else{
-    count = -1;
-  }
-  countplus.textContent = parseInt(countplus.textContent)+count;
-})
-
-=======
   if(count===0){
     count++;
   }else{
@@ -47,16 +24,11 @@ img.addEventListener('click',function(){
 })
 
 
->>>>>>> keh
 function Dropdown() {
   const menu = document.getElementById('dropdownMenu');
   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> keh
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
 // 나중에 바꿔주시면 됩니다!
@@ -76,11 +48,7 @@ function addComment() {
 
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
-<<<<<<< HEAD
-    commmentAuthor.classList.add('mjh-askDetail-comment-author');
-=======
     commmentAuthor.classList.add('mjh-askDetail-commnet-author');
->>>>>>> keh
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)

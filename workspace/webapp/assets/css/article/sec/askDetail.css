@@ -3,10 +3,6 @@
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-/* main 영역 */
-.itAskBox {
-=======
 /* header, footer 영역 (임시) */
 header,
 footer{
@@ -18,7 +14,6 @@ footer{
 
 /* main 영역 */
 .itaskBox {
->>>>>>> keh
   width: 100%;
   height: 100%;
   display: flex;
@@ -26,11 +21,6 @@ footer{
   justify-content: center;
   align-items: center;
 }
-<<<<<<< HEAD
-  
-  /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-  .mjh-askDetail-topcontainer {
-=======
   /* / main 영역 / */
   .askBox {
     width: 100%;
@@ -43,7 +33,6 @@ footer{
   
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
   .mjh-ask-topcontainer {
->>>>>>> keh
     width: 1200px;
     height: 100%;
     display: flex;
@@ -52,32 +41,20 @@ footer{
   }
   
   /* / 개발 큰 글씨 / */
-<<<<<<< HEAD
-  .mjh-askDetail-title {
-=======
   .mjh-ask-title {
->>>>>>> keh
     font-size: 50px;
     margin: 50px;
   }
   
   /* / 개발 태그 버튼 담은 박스 / */
-<<<<<<< HEAD
-  .mjh-askDetail-tag {
-=======
   .mjh-ask-tag {
->>>>>>> keh
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
   
   /* / 개발 태그 버튼 / */
-<<<<<<< HEAD
-  .mjh-askDetail-tag-btn {
-=======
   .mjh-ask-tag-btn {
->>>>>>> keh
     border: 1px solid #D96073;
     color: #D96073;
     background: none;
@@ -89,28 +66,12 @@ footer{
   }
   
   /* / 선택된 버튼 / */
-<<<<<<< HEAD
-  .mjh-askDetail-select {
-=======
   .mjh-ask-select {
->>>>>>> keh
     background: #D96073;
     color: white;
   }
   
   /* / 개발 카테고리 버튼 담은 박스 / */
-<<<<<<< HEAD
-  .mjh-askDetail-category {
-    border: none; 
-    width: 100%;
-    height: 45px;
-    display: flex;
-    margin-bottom: 30px;
-  }
-  
-  /* / 개발 카테고리 버튼 */
-  .mjh-askDetail-category-btn {
-=======
   .mjh-ask-category {
     border: none; 
     width: 100%;
@@ -119,7 +80,6 @@ footer{
   
   /* / 개발 카테고리 버튼 */
   .mjh-category-btn {
->>>>>>> keh
     width: 100%;
     border-radius: 0;
     border: none;
@@ -129,42 +89,26 @@ footer{
     cursor: pointer;
   }
 
-<<<<<<< HEAD
-.mjh-askDetail-tag-btn:hover {
-=======
 .mjh-ask-tag-btn:hover {
->>>>>>> keh
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-<<<<<<< HEAD
-.mjh-askDetail-select {
-=======
 .mjh-ask-select {
->>>>>>> keh
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-<<<<<<< HEAD
-.mjh-askDetail-category {
-=======
 .mjh-ask-category {
->>>>>>> keh
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-<<<<<<< HEAD
-.mjh-askDetail-category-btn {
-=======
 .mjh-ask-category-btn {
->>>>>>> keh
   width: 100%;
   border-radius: 0;
   border:none;
@@ -174,12 +118,7 @@ footer{
   cursor: pointer;
 }
 /* 글 제목 및 정보보 */
-<<<<<<< HEAD
-.mjh-askDetail-text-total {
-  width: 1200px;
-=======
 .mjh-ask-text-total {
->>>>>>> keh
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px; /* 좌우 넓이 추가 */
@@ -188,19 +127,11 @@ footer{
   padding-bottom: 20px;
 }
 /* 본문 헤더더 */
-<<<<<<< HEAD
-.mjh-askDetail-text-header{
-  margin-bottom: 20px;
-}
-/* 본문 제목목 */
-.mjh-askDetail-text-title{
-=======
 .ask-text-header{
   margin-bottom: 20px;
 }
 /* 본문 제목목 */
 .mjh-ask-text-title{
->>>>>>> keh
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -208,11 +139,7 @@ footer{
   cursor: pointer;
 }
 /* 본문 상단 태그그 */
-<<<<<<< HEAD
-.mjh-askDetail-text-tag {
-=======
 .mjh-ask-text-tag {
->>>>>>> keh
   background-color: #D96073; /* 변경된 색상 */
   color: white;
   padding: 5px 10px;
@@ -221,11 +148,7 @@ footer{
   font-weight: bold;
 }
 /* 본문 내용용 */
-<<<<<<< HEAD
-.mjh-askDetail-text-textbody {
-=======
 .mjh-ask-text-textbody {
->>>>>>> keh
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -236,30 +159,18 @@ footer{
   margin-bottom: 20px;
 }
 /* 본문 작성자자 프로필 */
-<<<<<<< HEAD
-.mjh-askDetail-text-profile{
-=======
 .ask-text-profile{
->>>>>>> keh
   display: flex;
   justify-items: center;
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-<<<<<<< HEAD
-.mjh-askDetail-text-author{
-  padding-left: 10px;
-}
-/* 본문 하단 태그그 */
-.mjh-askDetail-text-bottom-tag {
-=======
 .mjh-ask-text-author{
   padding-left: 10px;
 }
 /* 본문 하단 태그그 */
 .mjh-ask-text-bottom-tag {
->>>>>>> keh
   background-color: #DFDFDF; /* 변경된 색상 */
   color: #333;
   padding: 5px 10px;
@@ -269,11 +180,7 @@ footer{
   cursor: pointer;
 }
 /*  본문 모니터, 댓글, 공유수수  */
-<<<<<<< HEAD
-.mjh-askDetail-content{
-=======
 .Detail-content{
->>>>>>> keh
   display: flex;
   margin: auto;
   align-items: center;
@@ -298,30 +205,18 @@ footer{
   padding-left: 100px;
 }
 /* 드롭다운 */
-<<<<<<< HEAD
-.mjh-askDetail-dropdown {
-  position: relative;
-  display: inline-block;
-}
-.mjh-askDetail-dropdown-img {
-=======
 .Detail-dropdown {
   position: relative;
   display: inline-block;
 }
 .Detail-dropdown-img {
->>>>>>> keh
   position: relative;
   padding-left: 100px;
   cursor: pointer;
   width: 40px; /* 이미지 크기 설정 */
   height: 40px;
 }
-<<<<<<< HEAD
-.mjh-askDetail-dropdown-menu {
-=======
 .Detail-dropdown-menu {
->>>>>>> keh
   position: absolute;
   left: 150px;
   top: 20px;
@@ -330,32 +225,20 @@ footer{
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-<<<<<<< HEAD
-.mjh-askDetail-dropdown-menu >a {
-=======
 .Detail-dropdown-menu >a {
->>>>>>> keh
   display: block;
   padding: 10px 40px;
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
-<<<<<<< HEAD
-.mjh-askDetail-dropdown-menu a:hover {
-=======
 .Detail-dropdown-menu a:hover {
->>>>>>> keh
   background-color: #f2f2f2;
 }
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
 .mjh-askDetail-comment-box{
-<<<<<<< HEAD
-  width: 1200px;
-=======
   width: 100%;
->>>>>>> keh
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -399,11 +282,7 @@ footer{
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
 .mjh-askDetail-comment-show{
-<<<<<<< HEAD
-  width: 1200px;
-=======
   width: 100%;
->>>>>>> keh
   height: 100%;
   border: 1px solid #606060;
   border-radius: 15px;
@@ -413,11 +292,7 @@ footer{
 }
 
 /* 작성자 */
-<<<<<<< HEAD
-.mjh-askDetail-comment-author{
-=======
 .mjh-askDetail-commnet-author{
->>>>>>> keh
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -426,10 +301,6 @@ footer{
 
 /* 작성된 댓글 */
 .mjh-askDetail-comment-section{
-<<<<<<< HEAD
-  width: 1200px;
-=======
->>>>>>> keh
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
@@ -449,8 +320,4 @@ footer{
 .mjh-askDetail-comment-views,
 .mjh-askDetail-comment-monitor{
   padding: 10px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> keh

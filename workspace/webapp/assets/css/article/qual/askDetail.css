@@ -39,8 +39,6 @@ footer {
   margin: 50px;
 }
 
-<<<<<<< HEAD
-=======
 /* / 개발 태그 버튼 담은 박스 / */
 .lch-askDetail-tag {
   display: flex;
@@ -60,32 +58,20 @@ footer {
   cursor: pointer;
 }
 
->>>>>>> keh
 /* / 선택된 버튼 / */
 .lch-askDetail-select {
   background: #D96073;
   color: white;
 }
 
-<<<<<<< HEAD
-/* / 카테고리 버튼 담은 박스 / */
-=======
 /* / 개발 카테고리 버튼 담은 박스 / */
->>>>>>> keh
 .lch-askDetail-category {
   border: none;
   width: 100%;
   display: flex;
-<<<<<<< HEAD
-  margin-bottom: 30px;
-}
-
-/* / 카테고리 버튼 */
-=======
 }
 
 /* / 개발 카테고리 버튼 */
->>>>>>> keh
 .lch-category-btn {
   width: 100%;
   border-radius: 0;
@@ -205,11 +191,7 @@ footer {
 }
 
 /*  본문 모니터, 댓글, 공유수수  */
-<<<<<<< HEAD
-.lch-askDetail-content {
-=======
 .lch-detail-content {
->>>>>>> keh
   display: flex;
   margin: auto;
   align-items: center;
@@ -241,20 +223,12 @@ footer {
 }
 
 /* 드롭다운 */
-<<<<<<< HEAD
-.lch-askDetail-dropdown {
-=======
 .lch-detail-dropdown {
->>>>>>> keh
   position: relative;
   display: inline-block;
 }
 
-<<<<<<< HEAD
-.lch-askDetail-dropdown-img {
-=======
 .lch-detail-dropdown-img {
->>>>>>> keh
   position: relative;
   padding-left: 100px;
   cursor: pointer;
@@ -263,11 +237,7 @@ footer {
   height: 40px;
 }
 
-<<<<<<< HEAD
-.lch-askDetail-dropdown-menu {
-=======
 .lch-detail-dropdown-menu {
->>>>>>> keh
   position: absolute;
   left: 150px;
   top: 20px;
@@ -277,11 +247,7 @@ footer {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-.lch-askDetail-dropdown-menu>a {
-=======
 .lch-detail-dropdown-menu>a {
->>>>>>> keh
   display: block;
   padding: 10px 40px;
   text-decoration: none;
@@ -289,11 +255,7 @@ footer {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.lch-askDetail-dropdown-menu a:hover {
-=======
 .lch-detail-dropdown-menu a:hover {
->>>>>>> keh
   background-color: #f2f2f2;
 }
 
@@ -328,10 +290,6 @@ footer {
   height: 50px;
   margin: 20px;
   border: none;
-<<<<<<< HEAD
-  resize: none;
-=======
->>>>>>> keh
 }
 
 /* 댓글 올리기 버튼 */
@@ -371,14 +329,6 @@ footer {
   font-size: 18px;
 }
 
-<<<<<<< HEAD
-/* 삭제된 댓글  */
-.lch-askDetail-delete-comment-style{
-  color: red;
-}
-
-=======
->>>>>>> keh
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
 .lch-askDetail-comment-info {
   font-size: 15px;
