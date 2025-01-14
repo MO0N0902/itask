@@ -12,7 +12,7 @@ header {
 }
 
 /* main 영역 */
-.tipBox {
+.itAskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -144,6 +144,7 @@ header {
   margin-left: 10px;
 }
 
+/* 게시물 제목 a 태그 설정 */
 .bjs-tip-post-title > a{
   text-decoration: none;
   color:black;
@@ -161,6 +162,7 @@ header {
   cursor: pointer;
 }
 
+/* 본문 a 태그 추가 */
 .bjs-tip-post-body>a{
   text-decoration: none;
   color:#555;
