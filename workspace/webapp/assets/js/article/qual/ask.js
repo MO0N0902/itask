@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // 게시글 필터링
       posts.forEach((post) => {
         const postTag = post.dataset.tag; // 게시글의 data-tag 값
-        console.log(postTag);
         if (selectedTag === '전체' || postTag === selectedTag) {
           post.style.display = ''; // 보이기
         } else {

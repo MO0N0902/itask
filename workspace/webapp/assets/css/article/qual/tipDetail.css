@@ -39,39 +39,21 @@ footer {
   margin: 50px;
 }
 
-/* / 개발 태그 버튼 담은 박스 / */
-.lch-tipDetail-tag {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-/* / 개발 태그 버튼 / */
-.lch-tipDetail-tag-btn {
-  border: 1px solid #D96073;
-  color: #D96073;
-  background: none;
-  width: 170px;
-  border-radius: 40px;
-  padding: 10px 40px;
-  margin: 20px 20px;
-  cursor: pointer;
-}
-
 /* / 선택된 버튼 / */
 .lch-tipDetail-select {
   background: #D96073;
   color: white;
 }
 
-/* / 개발 카테고리 버튼 담은 박스 / */
+/* / 카테고리 버튼 담은 박스 / */
 .lch-tipDetail-category {
   border: none;
   width: 100%;
   display: flex;
+  margin-bottom: 30px;
 }
 
-/* / 개발 카테고리 버튼 */
+/* / 카테고리 버튼 */
 .lch-category-btn {
   width: 100%;
   border-radius: 0;
@@ -191,7 +173,7 @@ footer {
 }
 
 /*  본문 모니터, 댓글, 공유수수  */
-.lch-detail-content {
+.lch-tipDetail-content {
   display: flex;
   margin: auto;
   align-items: center;
@@ -223,12 +205,12 @@ footer {
 }
 
 /* 드롭다운 */
-.lch-detail-dropdown {
+.lch-tipDetail-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.lch-detail-dropdown-img {
+.lch-tipDetail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
@@ -237,7 +219,7 @@ footer {
   height: 40px;
 }
 
-.lch-detail-dropdown-menu {
+.lch-tipDetail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -247,7 +229,7 @@ footer {
   border-radius: 5px;
 }
 
-.lch-detail-dropdown-menu>a {
+.lch-tipDetail-dropdown-menu>a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
@@ -255,7 +237,7 @@ footer {
   cursor: pointer;
 }
 
-.lch-detail-dropdown-menu a:hover {
+.lch-tipDetail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
@@ -290,6 +272,7 @@ footer {
   height: 50px;
   margin: 20px;
   border: none;
+  resize: none;
 }
 
 /* 댓글 올리기 버튼 */
@@ -327,6 +310,11 @@ footer {
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
+}
+
+/* 삭제된 댓글  */
+.lch-tipDetail-delete-comment-style{
+  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
