@@ -4,16 +4,9 @@
   padding: 0;
 }
 /* header, footer 영역 (임시) */
-header,
-footer{
-  border: 1px solid black;
-  background-color: #D96073;
-  width: 100%;
-  height: 100px;
-}
 
 /* main 영역 */
-.ittipBox {
+.itAskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,18 +14,9 @@ footer{
   justify-content: center;
   align-items: center;
 }
-  /* / main 영역 / */
-  .tipBox {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-  .mjh-tip-topcontainer {
+  .mjh-tipDetail-topcontainer {
     width: 1200px;
     height: 100%;
     display: flex;
@@ -41,20 +25,20 @@ footer{
   }
   
   /* / 개발 큰 글씨 / */
-  .mjh-tip-title {
+  .mjh-tipDetail-title {
     font-size: 50px;
     margin: 50px;
   }
   
   /* / 개발 태그 버튼 담은 박스 / */
-  .mjh-tip-tag {
+  .mjh-tipDetail-tag {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
   
   /* / 개발 태그 버튼 / */
-  .mjh-tip-tag-btn {
+  .mjh-tipDetail-tag-btn {
     border: 1px solid #D96073;
     color: #D96073;
     background: none;
@@ -66,20 +50,22 @@ footer{
   }
   
   /* / 선택된 버튼 / */
-  .mjh-tip-select {
+  .mjh-tipDetail-select {
     background: #D96073;
     color: white;
   }
   
   /* / 개발 카테고리 버튼 담은 박스 / */
-  .mjh-tip-category {
+  .mjh-tipDetail-category {
     border: none; 
     width: 100%;
+    height: 45px;
     display: flex;
+    margin-bottom: 30px;
   }
   
   /* / 개발 카테고리 버튼 */
-  .mjh-category-btn {
+  .mjh-tipDetail-category-btn {
     width: 100%;
     border-radius: 0;
     border: none;
@@ -89,26 +75,26 @@ footer{
     cursor: pointer;
   }
 
-.mjh-tip-tag-btn:hover {
+.mjh-tipDetail-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-.mjh-tip-select {
+.mjh-tipDetail-select {
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-.mjh-tip-category {
+.mjh-tipDetail-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.mjh-tip-category-btn {
+.mjh-tipDetail-category-btn {
   width: 100%;
   border-radius: 0;
   border:none;
@@ -118,7 +104,8 @@ footer{
   cursor: pointer;
 }
 /* 글 제목 및 정보보 */
-.mjh-tip-text-total {
+.mjh-tipDetail-text-total {
+  width: 1200px;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px; /* 좌우 넓이 추가 */
@@ -127,11 +114,11 @@ footer{
   padding-bottom: 20px;
 }
 /* 본문 헤더더 */
-.tip-text-header{
+.mjh-tipDetail-text-header{
   margin-bottom: 20px;
 }
 /* 본문 제목목 */
-.mjh-tip-text-title{
+.mjh-tipDetail-text-title{
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -139,7 +126,7 @@ footer{
   cursor: pointer;
 }
 /* 본문 상단 태그그 */
-.mjh-tip-text-tag {
+.mjh-tipDetail-text-tag {
   background-color: #D96073; /* 변경된 색상 */
   color: white;
   padding: 5px 10px;
@@ -148,7 +135,7 @@ footer{
   font-weight: bold;
 }
 /* 본문 내용용 */
-.mjh-tip-text-textbody {
+.mjh-tipDetail-text-textbody {
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -159,18 +146,18 @@ footer{
   margin-bottom: 20px;
 }
 /* 본문 작성자자 프로필 */
-.tip-text-profile{
+.mjh-tipDetail-text-profile{
   display: flex;
   justify-items: center;
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.mjh-tip-text-author{
+.mjh-tipDetail-text-author{
   padding-left: 10px;
 }
 /* 본문 하단 태그그 */
-.mjh-tip-text-bottom-tag {
+.mjh-tipDetail-text-bottom-tag {
   background-color: #DFDFDF; /* 변경된 색상 */
   color: #333;
   padding: 5px 10px;
@@ -180,7 +167,7 @@ footer{
   cursor: pointer;
 }
 /*  본문 모니터, 댓글, 공유수수  */
-.Detail-content{
+.mjh-tipDetail-content{
   display: flex;
   margin: auto;
   align-items: center;
@@ -205,18 +192,18 @@ footer{
   padding-left: 100px;
 }
 /* 드롭다운 */
-.Detail-dropdown {
+.mjh-tipDetail-dropdown {
   position: relative;
   display: inline-block;
 }
-.Detail-dropdown-img {
+.mjh-tipDetail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
   width: 40px; /* 이미지 크기 설정 */
   height: 40px;
 }
-.Detail-dropdown-menu {
+.mjh-tipDetail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -225,20 +212,20 @@ footer{
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.Detail-dropdown-menu >a {
+.mjh-tipDetail-dropdown-menu >a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
-.Detail-dropdown-menu a:hover {
+.mjh-tipDetail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
 .mjh-tipDetail-comment-box{
-  width: 100%;
+  width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -282,7 +269,7 @@ footer{
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
 .mjh-tipDetail-comment-show{
-  width: 100%;
+  width: 1200px;
   height: 100%;
   border: 1px solid #606060;
   border-radius: 15px;
@@ -292,7 +279,7 @@ footer{
 }
 
 /* 작성자 */
-.mjh-tipDetail-commnet-author{
+.mjh-tipDetail-comment-author{
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -301,6 +288,7 @@ footer{
 
 /* 작성된 댓글 */
 .mjh-tipDetail-comment-section{
+  width: 1200px;
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
