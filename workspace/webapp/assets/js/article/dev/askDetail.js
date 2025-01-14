@@ -11,24 +11,24 @@ tagBtns.forEach((tagBtn) => {
 });
 //모니터 버튼 누르면 1증가
 
-let count = -1;
+let count1 = -1;
 
 const img = document.getElementById('Detail-moniter-img')
 const countplus = document.getElementById('Detail-monitercount')
 
 img.addEventListener('click',function(){
-  if(count===-1){
-    count = 1;
+  if(count1===-1){
+    count1 = 1;
   }else{
-    count = -1;
+    count1 = -1;
   }
-  countplus.textContent = parseInt(countplus.textContent)+count;
-})
+  countplus.textContent = parseInt(countplus.textContent)+count1;
+});
 //수정삭제 드롭다운
 function Dropdown() {
   const menu = document.getElementById('dropdownMenu');
   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
+};
 
 
 
@@ -39,13 +39,22 @@ postDeletebtn.addEventListener('click', function(){
   if(true){
     
   }
-})
+});
   
 //게시글 공유
+let count3 = -1
 const postshare = document.getElementById('Detail-share-img');
+const postshareplus = document.getElementById('Detail-sharecount');
 postshare.addEventListener('click', function(){
-  confirm('다음 링크를 복사하세요')
-})
+  confirm('구현 못했습니다 직접 복사해주세요.')
+  if(count3===-1){
+    count3 = 1;
+  }else{
+    count3 = -1;
+  }
+  postshareplus.textContent = parseInt(postshareplus.textContent)+count3;
+});
+
 
 
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
@@ -97,9 +106,26 @@ function addComment() {
 
     //댓글 삭제
     const commentdelete = document.createElement('span');
+    // commentdelete.addEventListener('click', function(){
+    //   // confirm('댓글을 삭제하시겠습니까?')
+    //   if(confirm('댓글을 삭제하시겠습니까?')){
+    //     alert('댓글을 삭제합니다')
+    //     comment.textContent = '삭제된 댓글입니다.';
+    //     comment.classList.add('mjh-askDetail-delete-comment-style');
+    //     // 모니터 수 - 변경
+    //     commentMonitorNum.textContent = '-';
+    //   }else{
+    //     alert('취소')
+    //   }
+    // });
+    commentdelete.classList.add('mjh-askDetail-comment-delete');
+    commentdelete.textContent = "삭제";
+
     commentdelete.addEventListener('click', function(){
       // confirm('댓글을 삭제하시겠습니까?')
-      if(confirm('댓글을 삭제하시겠습니까?')){
+      if(comment.textContent = '삭제된 댓글입니다.'){
+        alert('이미 삭제된 댓글입니다.')
+      }else if(confirm('댓글을 삭제하시겠습니까?')){
         alert('댓글을 삭제합니다')
         comment.textContent = '삭제된 댓글입니다.';
         comment.classList.add('mjh-askDetail-delete-comment-style');
@@ -109,17 +135,21 @@ function addComment() {
         alert('취소')
       }
     });
-    commentdelete.classList.add('mjh-askDetail-comment-delete');
-    commentdelete.textContent = "삭제";
 
+
+    
     //댓글 수정
     const commentmodify = document.createElement('span');
     commentmodify.addEventListener('click', function(){
       if(comment.textContent === '삭제된 댓글입니다.'){
         alert('삭제한 댓글은 수정할 수 없습니다.')
       }else if(confirm('댓글을 수정하시겠습니까?')){
+        if(true){
         const modifycomment = prompt('수정할 댓글을 입력해주세요')
         comment.textContent = modifycomment + ' (수정됨)';
+        }else{
+          
+        }
       }else{
         alert('취소')
       }
@@ -127,6 +157,7 @@ function addComment() {
     commentmodify.classList.add('mjh-askDetail-comment-modify');
     commentmodify.textContent = "수정 ";
 
+    let count = -1;
 
     //모니터 이미지
     const monitorImg = document.createElement('img');

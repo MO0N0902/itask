@@ -288,8 +288,14 @@
 .mjh-askDetail-comment-section{
   width: 1200px;
   padding: 10px 30px;
+  margin-bottom: 20px;
   color: #606060;
   font-size: 18px;
+}
+
+/* 삭제된 댓글 컬러 변경 */
+.mjh-askDetail-delete-comment-style{
+  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
@@ -307,3 +313,10 @@
 .mjh-askDetail-comment-monitor{
   padding: 10px;
 }
+.mjh-askDetail-comment-delete, .mjh-askDetail-comment-modify{
+padding-left: 20px;
+cursor: pointer;
+}
+
+/* 푸터 */
+

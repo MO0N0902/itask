@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
 }
-/* header, footer 영역 (임시) */
-
 /* main 영역 */
 .itAskBox {
   width: 100%;
@@ -290,8 +288,14 @@
 .mjh-tipDetail-comment-section{
   width: 1200px;
   padding: 10px 30px;
+  margin-bottom: 20px;
   color: #606060;
   font-size: 18px;
+}
+
+/* 삭제된 댓글 컬러 변경 */
+.mjh-tipDetail-delete-comment-style{
+  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
@@ -309,3 +313,10 @@
 .mjh-tipDetail-comment-monitor{
   padding: 10px;
 }
+.mjh-tipDetail-comment-delete, .mjh-tipDetail-comment-modify{
+padding-left: 20px;
+cursor: pointer;
+}
+
+/* 푸터 */
+

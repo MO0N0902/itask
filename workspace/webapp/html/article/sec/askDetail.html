@@ -8,7 +8,6 @@
   <script defer src="./../../../assets/js/article/sec/askDetail.js"></script>
 </head>
 <body>
-  <!-- 헤더 영역 -->
   <!-- 메인 영역 -->
   <main class="itAskBox">
     <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
@@ -18,13 +17,14 @@
       <span class="mjh-askDetail-title">보안</span>
           <!-- 상위 카테고리 -->
       <div class="mjh-askDetail-category">
+        
         <button class="mjh-askDetail-category-btn mjh-askDetail-select" onclick="location.href='./ask.html'">질문</button>
         <button class="mjh-askDetail-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
       </div>
     </div>
       <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
         <!-- 본문 전체체 -->
-      <article class="mjh-askDetail-text-total" data-tag="Network">
+      <article class="mjh-askDetail-text-total" data-tag="Java">
           <!-- 본문 헤더더 -->
         <div class = "mjh-askDetail-text-header">
           <span class="mjh-askDetail-text-tag">Network</span>
@@ -60,8 +60,8 @@
                   class="mjh-askDetail-dropdown-img" 
                   onclick="Dropdown()">
                 <div class="mjh-askDetail-dropdown-menu" id="dropdownMenu">
-                  <a href="#">수정</a>
-                  <a href="#">삭제</a>
+                  <a href="./askEdit.html" id="">수정</a>
+                  <a href="#" id="postdelete">삭제</a>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
         </div>
 
         <!-- 작성된 댓글이 보여지는 리스트 창 -->
-        <div id="comment-section">
+        <div id="comment-section">`
           <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
           <div class="mjh-askDetail-comment-show">
             <span class="mjh-askDetail-comment-author">27inch 문준혁🏅</span>
@@ -88,10 +88,11 @@
             <div class="mjh-askDetail-comment-info">
               <!-- js으로 24시간 전이면 시간으로 이후는 몇일 전으로 31일 넘어가면 몇달 12개월 넘어가면 몇 년 -->
               <span class="mjh-askDetail-comment-date">14일전</span>
-              <span class="mjh-askDetail-comment-views">조회수 1000+</span>
               <span class="mjh-askDetail-comment-monitor">
                 <img src="./../../../assets/img/monitor.png" alt="사진오류"> 100+
               </span>
+              <span class="mjh-askDetail-comment-modify">수정</span>
+              <span class="mjh-askDetail-comment-delete">삭제</span>
             </div>
           </div>
           <!-- --------------------------이만큼 추가돼야함^_^~-------------------- -->

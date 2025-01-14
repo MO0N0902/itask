@@ -2,32 +2,51 @@ const tagBtns = document.querySelectorAll('.mjh-tipDetail-tag-btn');
 
 tagBtns.forEach((tagBtn) => {
   tagBtn.addEventListener('click', function () {
-    // 모든 버튼에서 mjh-tipDetail-select 클래스 제거
+    // 모든 버튼에서 bjs-tip-select 클래스 제거
     tagBtns.forEach((btn) => btn.classList.remove('mjh-tipDetail-select'));
 
-    // 클릭된 버튼에 mjh-tipDetail-select 클래스 추가
+    // 클릭된 버튼에 bjs-tip-select 클래스 추가
     tagBtn.classList.add('mjh-tipDetail-select');
   });
 });
-let count = 0;
+//모니터 버튼 누르면 1증가
+
+let count1 = -1;
 
 const img = document.getElementById('Detail-moniter-img')
 const countplus = document.getElementById('Detail-monitercount')
 
 img.addEventListener('click',function(){
-  if(count===0){
-    count++;
+  if(count1===-1){
+    count1 = 1;
   }else{
-    count--;
+    count1 = -1;
   }
-  countplus.textContent = count;
+  countplus.textContent = parseInt(countplus.textContent)+count1;
 })
-
-
+//수정삭제 드롭다운
 function Dropdown() {
   const menu = document.getElementById('dropdownMenu');
   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
+
+
+
+//게시물 삭제
+const postDeletebtn = document.getElementById('postdelete');
+postDeletebtn.addEventListener('click', function(){
+  confirm('게시글을 삭제하시겠습니까?')
+  if(true){
+    
+  }
+})
+  
+//게시글 공유
+const postshare = document.getElementById('Detail-share-img');
+postshare.addEventListener('click', function(){
+  confirm('다음 링크를 복사하세요')
+})
+
 
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
@@ -65,24 +84,69 @@ function addComment() {
     commentDate.classList.add('mjh-tipDetail-comment-date');
     commentDate.textContent = "1시간 전" // 나중에 불러오는거 여기 추가
 
-    // 조회수
-    const commentViews = document.createElement('span');
-    commentViews.classList.add('mjh-tipDetail-comment-views');
-    commentViews.textContent = "조회수 316"; // 나중에 불러오는거 여기 추가
-
+   
     // 모니터 수, 이미지 박스
     const commentMonitor = document.createElement('span');
     commentMonitor.classList.add('mjh-tipDetail-comment-monitor');
 
+
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
     commentMonitorNum.classList.add('mjh-tipDetail-comment-monitor-num');
-    commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
+    commentMonitorNum.textContent = " 0"; // 나중에 불러오는거 여기 추가
+
+    //댓글 삭제
+    const commentdelete = document.createElement('span');
+    commentdelete.addEventListener('click', function(){
+      // confirm('댓글을 삭제하시겠습니까?')
+      if(confirm('댓글을 삭제하시겠습니까?')){
+        alert('댓글을 삭제합니다')
+        comment.textContent = '삭제된 댓글입니다.';
+        comment.classList.add('mjh-tipDetail-delete-comment-style');
+        // 모니터 수 - 변경
+        commentMonitorNum.textContent = '-';
+      }else{
+        alert('취소')
+      }
+    });
+    commentdelete.classList.add('mjh-tipDetail-comment-delete');
+    commentdelete.textContent = "삭제";
+
+    //댓글 수정
+    const commentmodify = document.createElement('span');
+    commentmodify.addEventListener('click', function(){
+      if(comment.textContent === '삭제된 댓글입니다.'){
+        alert('삭제한 댓글은 수정할 수 없습니다.')
+      }else if(confirm('댓글을 수정하시겠습니까?')){
+        const modifycomment = prompt('수정할 댓글을 입력해주세요')
+        comment.textContent = modifycomment + ' (수정됨)';
+      }else{
+        alert('취소')
+      }
+    });
+    commentmodify.classList.add('mjh-tipDetail-comment-modify');
+    commentmodify.textContent = "수정 ";
+
+    let count = -1;
 
     //모니터 이미지
     const monitorImg = document.createElement('img');
     monitorImg.setAttribute('src', './../../../assets/img/monitor.png');
     monitorImg.setAttribute('alt', '사진오류');
+    monitorImg.addEventListener('click', function(){
+      if(comment.textContent === '삭제된 댓글입니다.'){
+        alert('삭제한 댓글에는 모니터기능이 제한됩니다.');
+        count = 316;
+      }else if(count===-1){
+        count = 1;
+        commentMonitorNum.textContent = parseInt(commentMonitorNum.textContent)+count;
+      }else{
+        count = -1;
+        commentMonitorNum.textContent = parseInt(commentMonitorNum.textContent)+count;
+      }
+    });
+    
+    
 
     // 댓글을 댓글 섹션에 추가
     const commentSection = document.getElementById('comment-section');
@@ -91,10 +155,11 @@ function addComment() {
     commentArea.appendChild(comment);
     commentArea.appendChild(commentInfo);
     commentInfo.appendChild(commentDate);
-    commentInfo.appendChild(commentViews);
     commentInfo.appendChild(commentMonitor);
     commentMonitor.appendChild(monitorImg);
     commentMonitor.appendChild(commentMonitorNum);
+    commentInfo.appendChild(commentmodify);
+    commentInfo.appendChild(commentdelete);
     
     // 댓글 수 증가
     commentCount++;
