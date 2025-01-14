@@ -3,69 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개발발 글 상세페이지</title>
+  <title>보안 글 상세페이지</title>
   <link rel="stylesheet" href="./../../../assets/css/article/dev/tipDetail.css">
   <script defer src="./../../../assets/js/article/dev/tipDetail.js"></script>
 </head>
 <body>
+  <!-- 헤더 영역 -->
+  <header>header area</header>
+``
   <!-- 메인 영역 -->
-  <main class="itAskBox">
+  <main class="ittipBox">
     <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+    <article class="mjh-tipDetail-elements">
+      <!-- 자격증  -->
+      <main class="tipBox">
         <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
-    <div class="mjh-tipDetail-topcontainer">
+        <div class="mjh-tip-topcontainer">
          <!-- 개발  -->
-      <span class="mjh-tipDetail-title">개발</span>
-          <!-- 상위 카테고리 -->
-      <div class="mjh-tipDetail-category">
-        <button class="mjh-tipDetail-category-btn" onclick="location.href='./ask.html'">질문</button>
-        <button class="mjh-tipDetail-category-btn mjh-tipDetail-select" onclick="location.href='./tip.html'">꿀팁</button>
-      </div>
-    </div>
+          <span class="mjh-tip-title">보안</span>
+          <!-- 자격증 상위 카테고리 -->
+          <div class="mjh-tip-category">
+            <button class="mjh-category-btn ">질문</button>
+              <button class="mjh-category-btn mjh-tip-select">꿀팁</button>
+          </div>
+          <!-- 자격증 태그 버튼 -->
+          <div class="mjh-tip-tag">
+            <button class="mjh-tip-tag-btn mjh-tip-select">전체</button>
+            <button class="mjh-tip-tag-btn">Java</button>
+            <button class="mjh-tip-tag-btn">HTML</button>
+            <button class="mjh-tip-tag-btn">CSS</button>
+            <button class="mjh-tip-tag-btn">JavaScript</button>
+            <button class="mjh-tip-tag-btn">Oracle</button>`
+          </div>
+        </div>
+      </main>
       <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
         <!-- 본문 전체체 -->
-      <article class="mjh-tipDetail-text-total" data-tag="Network">
+        <article class="mjh-tip-text-total" data-tag="Network">
           <!-- 본문 헤더더 -->
-        <div class = "mjh-tipDetail-text-header">
-          <span class="mjh-tipDetail-text-tag">Java</span>
-          <div class="mjh-tipDetail-text-title">게시물 제목 예시</div>
-          <div class="mjh-tipDetail-text-profile">
-            <img src="./../../../assets/img/profile.png" alt="">
-            <span class="mjh-tipDetail-text-author"><b>27inch</b> 문준혁🏅</span>
+          <div class = "tip-text-header">
+            <span class="mjh-tip-text-tag">Network</span>
+            <div class="mjh-tip-text-title">게시물 제목 예시</div>
+            <div class="tip-text-profile">
+              <img src="./../../../assets/img/profile.png" alt="">
+              <span class="mjh-tip-text-author"><b>27inch</b> 문준혁🏅</span>
+            </div>
+            <div class="mjh-tip-text-date">2025-01-09 00:00</div>
           </div>
-          <div class="mjh-tipDetail-text-date">2025-01-09 00:00</div>
           <!-- 본문 메인인 -->
-        <article class="mjh-tipDetail-text-textbody">
+          <article class="mjh-tip-text-textbody">
             본문내용1 본문내용1
-        </article>
+          </article>
           <!-- 본문 바텀텀 -->
-        <article class="mjh-tipDetail-text-textbottom">
+          <article class="mjh-tip-text-textbottom">
             <!-- 본문 태그그 -->
-          <span class="mjh-tipDetail-text-bottom-tag">개발</span>
-          <span class="mjh-tipDetail-text-bottom-tag">꿀팁</span>
-          <span class="mjh-tipDetail-text-bottom-tag">Java</span>
+            <span class="mjh-tip-text-bottom-tag">보안</span>
+            <span class="mjh-tip-text-bottom-tag">질문</span>
+            <span class="mjh-tip-text-bottom-tag">Network</span>
             <!-- 본문 모니터, 댓글, 공유수수 -->
-          <div class="mjh-tipDetail-content">
-            <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
-            <span id="Detail-monitercount">0</span>
-            <img src="./../../../assets/img/view.png" alt="조회수" id = "Detail-view-img">
-            <span id="Detail-viewcount">0</span>
-            <img src="./../../../assets/img/share.png" alt="공유유수" id = "Detail-share-img">
-            <span id="Detail-sharecount">0</span>
+            <div class="Detail-content">
+              <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
+              <span id="Detail-monitercount">0</span>
+              <img src="./../../../assets/img/view.png" alt="조회수" id = "Detail-view-img">
+              <span id="Detail-viewcount">0</span>
+              <img src="./../../../assets/img/share.png" alt="공유유수" id = "Detail-share-img">
+              <span id="Detail-sharecount">0</span>
               <!-- 본문 수정삭제 드롭다운운-->
-              <div class="mjh-tipDetail-dropdown">
-                <img 
-                  src="./../../../assets/img/Container.png" 
-                  alt="드롭다운 이미지" 
-                  class="mjh-tipDetail-dropdown-img" 
-                  onclick="Dropdown()">
-                <div class="mjh-tipDetail-dropdown-menu" id="dropdownMenu">
-                  <a href="./tipEdit.html">수정</a>
-                  <a href="#">삭제</a>
+               <div class="Detail-dropdown">
+                  <img 
+                    src="./../../../assets/img/Container.png" 
+                    alt="드롭다운 이미지" 
+                    class="Detail-dropdown-img" 
+                    onclick="Dropdown()">
+                  <div class="Detail-dropdown-menu" id="dropdownMenu">
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
                 </div>
               </div>
             </div>
+          </article>
         </article>
-      </article>
       <!-- 게시글 내용에 대한 댓글 부분 -->
       <article class="mjh-tipDetail-comment-box">
 
@@ -81,7 +98,7 @@
         <div id="comment-section">
           <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
           <div class="mjh-tipDetail-comment-show">
-            <span class="mjh-tipDetail-comment-author">27inch 문준혁🏅</span>
+            <span class="mjh-tipDetail-commnet-author">27inch 문준혁🏅</span>
             <div class="mjh-tipDetail-comment-section"> 예시 댓글01 예시 댓글01 예시 댓글01 예시 댓글01</div>
             <!-- 작성된 날짜, 조회수, 모니터를 담은 박스 -->
             <div class="mjh-tipDetail-comment-info">`
@@ -95,6 +112,8 @@
           <!-- --------------------------이만큼 추가돼야함^_^~-------------------- -->
         </div>
       </article>
+
+    </article>
   </main>
 </body>
 </html>

@@ -67,7 +67,7 @@ function addComment() {
 
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
-    commmentAuthor.classList.add('mjh-tipDetail-comment-author');
+    commmentAuthor.classList.add('mjh-tipDetail-commnet-author');
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)

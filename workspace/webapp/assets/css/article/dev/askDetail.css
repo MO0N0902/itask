@@ -3,8 +3,17 @@
   margin: 0;
   padding: 0;
 }
+/* header, footer 영역 (임시) */
+header,
+footer{
+  border: 1px solid black;
+  background-color: #D96073;
+  width: 100%;
+  height: 100px;
+}
+
 /* main 영역 */
-.itAskBox {
+.itaskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,9 +21,18 @@
   justify-content: center;
   align-items: center;
 }
+  /* / main 영역 / */
+  .askBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* / main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) / */
-  .mjh-askDetail-topcontainer {
+  .mjh-ask-topcontainer {
     width: 1200px;
     height: 100%;
     display: flex;
@@ -23,20 +41,20 @@
   }
   
   /* / 개발 큰 글씨 / */
-  .mjh-askDetail-title {
+  .mjh-ask-title {
     font-size: 50px;
     margin: 50px;
   }
   
   /* / 개발 태그 버튼 담은 박스 / */
-  .mjh-askDetail-tag {
+  .mjh-ask-tag {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
   
   /* / 개발 태그 버튼 / */
-  .mjh-askDetail-tag-btn {
+  .mjh-ask-tag-btn {
     border: 1px solid #D96073;
     color: #D96073;
     background: none;
@@ -48,22 +66,20 @@
   }
   
   /* / 선택된 버튼 / */
-  .mjh-askDetail-select {
+  .mjh-ask-select {
     background: #D96073;
     color: white;
   }
   
   /* / 개발 카테고리 버튼 담은 박스 / */
-  .mjh-askDetail-category {
+  .mjh-ask-category {
     border: none; 
     width: 100%;
-    height: 45px;
     display: flex;
-    margin-bottom: 30px;
   }
   
   /* / 개발 카테고리 버튼 */
-  .mjh-askDetail-category-btn {
+  .mjh-category-btn {
     width: 100%;
     border-radius: 0;
     border: none;
@@ -73,26 +89,26 @@
     cursor: pointer;
   }
 
-.mjh-askDetail-tag-btn:hover {
+.mjh-ask-tag-btn:hover {
   background-color: #e7d4d7;
 }
 
 
 /* 선택된 버튼 */
-.mjh-askDetail-select {
+.mjh-ask-select {
   background: #D96073;
   color: white;
 }
 
 /* 개발 카테고리 버튼 담은 박스 */
-.mjh-askDetail-category {
+.mjh-ask-category {
   width: 100%;
   height: 45px;
   display: flex;
 }
 
 /* 개발 카테고리 버튼 */
-.mjh-askDetail-category-btn {
+.mjh-ask-category-btn {
   width: 100%;
   border-radius: 0;
   border:none;
@@ -102,8 +118,7 @@
   cursor: pointer;
 }
 /* 글 제목 및 정보보 */
-.mjh-askDetail-text-total {
-  width: 1200px;
+.mjh-ask-text-total {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px 20px; /* 좌우 넓이 추가 */
@@ -112,11 +127,11 @@
   padding-bottom: 20px;
 }
 /* 본문 헤더더 */
-.mjh-askDetail-text-header{
+.ask-text-header{
   margin-bottom: 20px;
 }
 /* 본문 제목목 */
-.mjh-askDetail-text-title{
+.mjh-ask-text-title{
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -124,7 +139,7 @@
   cursor: pointer;
 }
 /* 본문 상단 태그그 */
-.mjh-askDetail-text-tag {
+.mjh-ask-text-tag {
   background-color: #D96073; /* 변경된 색상 */
   color: white;
   padding: 5px 10px;
@@ -133,7 +148,7 @@
   font-weight: bold;
 }
 /* 본문 내용용 */
-.mjh-askDetail-text-textbody {
+.mjh-ask-text-textbody {
   border: 1px solid #ddd;
   height: 800px;
   border-radius: 10px;
@@ -144,18 +159,18 @@
   margin-bottom: 20px;
 }
 /* 본문 작성자자 프로필 */
-.mjh-askDetail-text-profile{
+.ask-text-profile{
   display: flex;
   justify-items: center;
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.mjh-askDetail-text-author{
+.mjh-ask-text-author{
   padding-left: 10px;
 }
 /* 본문 하단 태그그 */
-.mjh-askDetail-text-bottom-tag {
+.mjh-ask-text-bottom-tag {
   background-color: #DFDFDF; /* 변경된 색상 */
   color: #333;
   padding: 5px 10px;
@@ -165,7 +180,7 @@
   cursor: pointer;
 }
 /*  본문 모니터, 댓글, 공유수수  */
-.mjh-askDetail-content{
+.Detail-content{
   display: flex;
   margin: auto;
   align-items: center;
@@ -223,7 +238,7 @@
 
 /* 댓글 작성, 댓글 리스트가 담긴 박스 */
 .mjh-askDetail-comment-box{
-  width: 1200px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -267,7 +282,7 @@
 
 /* 작성자, 작성된 댓글, 시간, 조회수, 모니터가 담긴 박스 */
 .mjh-askDetail-comment-show{
-  width: 1200px;
+  width: 100%;
   height: 100%;
   border: 1px solid #606060;
   border-radius: 15px;
@@ -277,7 +292,7 @@
 }
 
 /* 작성자 */
-.mjh-askDetail-comment-author{
+.mjh-askDetail-commnet-author{
   padding: 20px;
   color: #606060;
   font-weight: bold;
@@ -286,16 +301,9 @@
 
 /* 작성된 댓글 */
 .mjh-askDetail-comment-section{
-  width: 1200px;
   padding: 10px 30px;
-  margin-bottom: 20px;
   color: #606060;
   font-size: 18px;
-}
-
-/* 삭제된 댓글 컬러 변경 */
-.mjh-askDetail-delete-comment-style{
-  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */
@@ -313,10 +321,3 @@
 .mjh-askDetail-comment-monitor{
   padding: 10px;
 }
-.mjh-askDetail-comment-delete, .mjh-askDetail-comment-modify{
-padding-left: 20px;
-cursor: pointer;
-}
-
-/* 푸터 */
-

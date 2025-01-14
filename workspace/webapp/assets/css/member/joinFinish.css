@@ -1,62 +1,47 @@
 /* 회원가입 페이지 2/3 : 회원정보 입력*/
 *{ padding: 0; margin: 0;}
+
 .itAskBox{
-  width: 1200px;
-  margin: auto;
+  margin: 200px auto;
   text-align: center;
   color: #606060;
+  /* border: 1px solid #D96073; */
 }
 
-
 /* 로고 */
-.itAskBox>a{
+.logo{
   width: 370px;
   display: block;
-  margin: 200px auto 50px;
+  margin: 20px auto;
 }
 .itAskBox>a>img{
   width: 100%;
 }
 .itAskBox>p{
-  font-size: 40px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 .itAskBox>p>span{
-  font-size: 20px;
+  font-size: 16px;
 }
 
-
-.itAskBox>form{
-  margin: auto;
-}
-
-/* .itAskBox>form>div{
-width: 486px;
-} */
-
-/*  폼태그 */
-.lsa-join-infoForm{  
-  position: relative;
-  top: 10px;
-  border: 1px solid #D96073;
-  height: 130px;
-  width: 486px;
-  margin: auto;
-}
 /* 로그인 버튼 */
-.lsa-join-infoBtn{
+.lsa-joinFinish-login{
   width: 486px;
   height: 70px;
+  display: block;
+  margin: auto;
   background-color: #D96073;
   color: white;
   font-size: 20px;
   border: none;
   border-radius: 50px;
-  /* text-decoration: none; */
-  position: absolute;
-  right: 0px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  text-decoration: none;
+  align-content: center;
+}
+.lsa-joinFinish-login:hover{
+  color: #D96073;
+  background-color: white;
+  border: 1px solid #D96073;
 }
