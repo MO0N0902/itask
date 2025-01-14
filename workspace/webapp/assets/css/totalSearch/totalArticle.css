@@ -11,7 +11,15 @@ header {
   height: 100px;
 }
 /* main 영역 */
+<<<<<<< HEAD
 .askBox {
+=======
+<<<<<<< HEAD
+.itAskBox {
+=======
+.askBox {
+>>>>>>> keh
+>>>>>>> main
   width: 100%;
   height: 100%;
   display: flex;
@@ -143,6 +151,11 @@ header {
 
 .bjs-totalArticle-post-author {
   cursor: pointer;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> main
 }
 
 /* 페이지네이션*/
@@ -170,4 +183,8 @@ header {
   color: white;
   border: 1px solid white;
   transition: .3s;
+<<<<<<< HEAD
+=======
+>>>>>>> keh
+>>>>>>> main
 }

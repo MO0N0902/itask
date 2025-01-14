@@ -62,7 +62,11 @@
           <span class="lch-askDetail-text-bottom-tag">질문</span>
           <span class="lch-askDetail-text-bottom-tag">정보보안</span>
           <!-- 본문 모니터, 댓글, 공유수 -->
+<<<<<<< HEAD
           <div class="lch-detail-content">
+=======
+          <div class="lch-askDetail-content">
+>>>>>>> main
             <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
             <span id="Detail-monitercount">0</span>
             <img src="./../../../assets/img/view.png" alt="조회수" id="Detail-view-img">
@@ -70,12 +74,21 @@
             <img src="./../../../assets/img/share.png" alt="공유수" id="Detail-share-img">
             <span id="Detail-sharecount">0</span>
             <!-- 본문 수정삭제 드롭다운-->
+<<<<<<< HEAD
             <div class="lch-detail-dropdown">
               <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-detail-dropdown-img"
                 onclick="Dropdown()">
               <div class="lch-detail-dropdown-menu" id="dropdownMenu">
                 <a href="#">수정</a>
                 <a href="#">삭제</a>
+=======
+            <div class="lch-askDetail-dropdown">
+              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-askDetail-dropdown-img"
+                onclick="Dropdown()">
+              <div class="lch-askDetail-dropdown-menu" id="dropdownMenu">
+                <a href="#">수정</a>
+                <a href="#" id="postdelete">삭제</a>
+>>>>>>> main
               </div>
             </div>
           </div>
@@ -88,7 +101,11 @@
         <div class="lch-askDetail-comment-count">댓글 <span id="comment-count">1</span></div>
         <!-- 댓글 작성 창 -->
         <div class="lch-askDetail-comment-input">
+<<<<<<< HEAD
           <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+=======
+          <textarea id="comment-input" name="lch-askDetail-ask-box" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+>>>>>>> main
           <button onclick="addComment()" class="lch-askDetail-add-btn">올리기</button>
         </div>
 

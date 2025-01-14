@@ -205,18 +205,18 @@ footer{
   padding-left: 100px;
 }
 /* 드롭다운 */
-.Detail-dropdown {
+.mjh-askDetail-dropdown {
   position: relative;
   display: inline-block;
 }
-.Detail-dropdown-img {
+.mjh-askDetail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
   width: 40px; /* 이미지 크기 설정 */
   height: 40px;
 }
-.Detail-dropdown-menu {
+.mjh-askDetail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -225,14 +225,14 @@ footer{
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.Detail-dropdown-menu >a {
+.mjh-askDetail-dropdown-menu >a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
-.Detail-dropdown-menu a:hover {
+.mjh-askDetail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
@@ -320,4 +320,8 @@ footer{
 .mjh-askDetail-comment-views,
 .mjh-askDetail-comment-monitor{
   padding: 10px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
