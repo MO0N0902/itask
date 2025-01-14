@@ -118,3 +118,20 @@ submitBtn.addEventListener('click', function (event) {
     location.reload(true); // 새로고침
   }
 });
+
+
+// 회원탈퇴하기
+
+document.getElementById("idid").addEventListener("click", function(){
+  // confirm("진짜 탈퇴하겠습니까?");
+  const isExit = confirm("진짜 탈퇴하겠습니까?");
+  if(isExit){
+    //눌렀을 때 원하는 경로로 가게 하기
+    location.href = "https://www.naver.com/"; 
+    // 나중에 메인 도메인 정해지면 메인으로 이동하기로함
+    // return "https://www.naver.com/"; 이렇게 하면 이동 안됨
+  }else{
+    return;
+  }
+ console.log(isExit);
+})
