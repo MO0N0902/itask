@@ -45,7 +45,7 @@ footer {
   color: white;
 }
 
-/* / 개발 카테고리 버튼 담은 박스 / */
+/* / 카테고리 버튼 담은 박스 / */
 .lch-askDetail-category {
   border: none;
   width: 100%;
@@ -53,7 +53,7 @@ footer {
   margin-bottom: 30px;
 }
 
-/* / 개발 카테고리 버튼 */
+/* / 카테고리 버튼 */
 .lch-category-btn {
   width: 100%;
   border-radius: 0;
@@ -173,7 +173,7 @@ footer {
 }
 
 /*  본문 모니터, 댓글, 공유수수  */
-.lch-detail-content {
+.lch-askDetail-content {
   display: flex;
   margin: auto;
   align-items: center;
@@ -205,12 +205,12 @@ footer {
 }
 
 /* 드롭다운 */
-.lch-detail-dropdown {
+.lch-askDetail-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.lch-detail-dropdown-img {
+.lch-askDetail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
@@ -219,7 +219,7 @@ footer {
   height: 40px;
 }
 
-.lch-detail-dropdown-menu {
+.lch-askDetail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -229,7 +229,7 @@ footer {
   border-radius: 5px;
 }
 
-.lch-detail-dropdown-menu>a {
+.lch-askDetail-dropdown-menu>a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
@@ -237,7 +237,7 @@ footer {
   cursor: pointer;
 }
 
-.lch-detail-dropdown-menu a:hover {
+.lch-askDetail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
@@ -275,10 +275,6 @@ footer {
   resize: none;
 }
 
-textarea{
-  
-}
-
 /* 댓글 올리기 버튼 */
 .lch-askDetail-add-btn {
   width: 80px;
@@ -314,6 +310,11 @@ textarea{
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
+}
+
+/* 삭제된 댓글  */
+.lch-askDetail-delete-comment-style{
+  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */

@@ -173,7 +173,7 @@ footer {
 }
 
 /*  본문 모니터, 댓글, 공유수수  */
-.lch-detail-content {
+.lch-tipDetail-content {
   display: flex;
   margin: auto;
   align-items: center;
@@ -205,12 +205,12 @@ footer {
 }
 
 /* 드롭다운 */
-.lch-detail-dropdown {
+.lch-tipDetail-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.lch-detail-dropdown-img {
+.lch-tipDetail-dropdown-img {
   position: relative;
   padding-left: 100px;
   cursor: pointer;
@@ -219,7 +219,7 @@ footer {
   height: 40px;
 }
 
-.lch-detail-dropdown-menu {
+.lch-tipDetail-dropdown-menu {
   position: absolute;
   left: 150px;
   top: 20px;
@@ -229,7 +229,7 @@ footer {
   border-radius: 5px;
 }
 
-.lch-detail-dropdown-menu>a {
+.lch-tipDetail-dropdown-menu>a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
@@ -237,7 +237,7 @@ footer {
   cursor: pointer;
 }
 
-.lch-detail-dropdown-menu a:hover {
+.lch-tipDetail-dropdown-menu a:hover {
   background-color: #f2f2f2;
 }
 
@@ -272,6 +272,7 @@ footer {
   height: 50px;
   margin: 20px;
   border: none;
+  resize: none;
 }
 
 /* 댓글 올리기 버튼 */
@@ -309,6 +310,11 @@ footer {
   padding: 10px 30px;
   color: #606060;
   font-size: 18px;
+}
+
+/* 삭제된 댓글  */
+.lch-tipDetail-delete-comment-style{
+  color: red;
 }
 
 /* 작성된 시간, 조회수, 모니터가 담긴 박스 */

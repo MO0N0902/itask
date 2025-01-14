@@ -12,7 +12,6 @@
 <body>
   <!-- 헤더 영역 -->
   <header>header area</header>
-  ``
   <!-- 메인 영역 -->
   <main class="itAskBox">
     <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
@@ -53,7 +52,7 @@
           <span class="lch-askDetail-text-bottom-tag">질문</span>
           <span class="lch-askDetail-text-bottom-tag">정보보안</span>
           <!-- 본문 모니터, 댓글, 공유수 -->
-          <div class="lch-detail-content">
+          <div class="lch-askDetail-content">
             <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
             <span id="Detail-monitercount">0</span>
             <img src="./../../../assets/img/view.png" alt="조회수" id="Detail-view-img">
@@ -61,12 +60,12 @@
             <img src="./../../../assets/img/share.png" alt="공유수" id="Detail-share-img">
             <span id="Detail-sharecount">0</span>
             <!-- 본문 수정삭제 드롭다운-->
-            <div class="lch-detail-dropdown">
-              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-detail-dropdown-img"
+            <div class="lch-askDetail-dropdown">
+              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-askDetail-dropdown-img"
                 onclick="Dropdown()">
-              <div class="lch-detail-dropdown-menu" id="dropdownMenu">
+              <div class="lch-askDetail-dropdown-menu" id="dropdownMenu">
                 <a href="#">수정</a>
-                <a href="#">삭제</a>
+                <a href="#" id="postdelete">삭제</a>
               </div>
             </div>
           </div>
@@ -88,12 +87,10 @@
           <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
           <div class="lch-askDetail-comment-show">
             <span class="lch-askDetail-commnet-author">27inch 문준혁🏅</span>
-            <div class="lch-askDetail-comment-section"> 예시 댓글01 예시 댓글01 예시 댓글01 예시 댓글01</div>
+            <div class="lch-askDetail-comment-section"> 보여주기용 댓글 입니다</div>
             <!-- 작성된 날짜, 조회수, 모니터를 담은 박스 -->
             <div class="lch-askDetail-comment-info">
-              <!-- js으로 24시간 전이면 시간으로 이후는 몇일 전으로 31일 넘어가면 몇달 12개월 넘어가면 몇 년 -->
               <span class="lch-askDetail-comment-date">14일전</span>
-              <span class="lch-askDetail-comment-views">조회수 1000+</span>
               <span class="lch-askDetail-comment-monitor">
                 <img src="./../../../assets/img/monitor.png" alt="사진오류" class="lch-askDetail-comment-cnt"> 
                 <span id="askDetail-comment-monitor-num" class="lch-askDetail-comment-monitor-num">100</span>
