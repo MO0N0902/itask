@@ -27,15 +27,6 @@
           <button class="lch-askDetail-category-btn lch-askDetail-select" onclick="location.href='./ask.html'">질문</button>
           <button class="lch-askDetail-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
         </div>
-        <!-- 자격증 태그 버튼 -->
-        <div class="lch-askDetail-tag">
-          <button class="lch-askDetail-tag-btn lch-askDetail-select">전체</button>
-          <button class="lch-askDetail-tag-btn">정보보안</button>
-          <button class="lch-askDetail-tag-btn">정보처리</button>
-          <button class="lch-askDetail-tag-btn">네트워크관리사</button>
-          <button class="lch-askDetail-tag-btn">리눅스마스터</button>
-          <button class="lch-askDetail-tag-btn">SQLD</button>
-        </div>
       </div>
       <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
       <!-- 본문 전체체 -->
@@ -88,7 +79,7 @@
         <div class="lch-askDetail-comment-count">댓글 <span id="comment-count">1</span></div>
         <!-- 댓글 작성 창 -->
         <div class="lch-askDetail-comment-input">
-          <textarea id="comment-input" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+          <textarea id="comment-input" name="lch-askDetail-ask-box" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
           <button onclick="addComment()" class="lch-askDetail-add-btn">올리기</button>
         </div>
 

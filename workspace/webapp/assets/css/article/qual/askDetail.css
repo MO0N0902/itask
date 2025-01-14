@@ -39,25 +39,6 @@ footer {
   margin: 50px;
 }
 
-/* / 개발 태그 버튼 담은 박스 / */
-.lch-askDetail-tag {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-/* / 개발 태그 버튼 / */
-.lch-askDetail-tag-btn {
-  border: 1px solid #D96073;
-  color: #D96073;
-  background: none;
-  width: 170px;
-  border-radius: 40px;
-  padding: 10px 40px;
-  margin: 20px 20px;
-  cursor: pointer;
-}
-
 /* / 선택된 버튼 / */
 .lch-askDetail-select {
   background: #D96073;
@@ -69,6 +50,7 @@ footer {
   border: none;
   width: 100%;
   display: flex;
+  margin-bottom: 30px;
 }
 
 /* / 개발 카테고리 버튼 */
@@ -290,6 +272,11 @@ footer {
   height: 50px;
   margin: 20px;
   border: none;
+  resize: none;
+}
+
+textarea{
+  
 }
 
 /* 댓글 올리기 버튼 */

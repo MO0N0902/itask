@@ -10,6 +10,47 @@ tagBtns.forEach((tagBtn) => {
   });
 });
 
+
+// 게시글 모니터
+let count = -1;
+
+const img = document.getElementById('Detail-moniter-img');
+const countplus = document.getElementById('Detail-monitercount'); // id명 -> 변경 필요
+
+img.addEventListener('click',function(){
+  if(count===-1){
+    count = 1;
+  }else{
+    count = -1;
+  }
+  countplus.textContent = parseInt(countplus.textContent)+count;
+})
+
+// 댓글 모니터
+let commentCnt = -1;
+
+const monitorClk = document.querySelector('.lch-tipDetail-comment-cnt');
+//lch-tipDetail-comment-monitor-num
+const commentMPlus = document.getElementById('tipDetail-comment-monitor-num');
+//아이디명 가져오면 새로 추가된 댓글 모니터 변경 x 
+
+console.log(monitorClk);
+console.log(commentMPlus);
+
+monitorClk.addEventListener('click',function(){
+  if(commentCnt===-1){
+    commentCnt = 1;
+  }else{
+    commentCnt = -1;
+  }
+  commentMPlus.textContent = parseInt(commentMPlus.textContent)+commentCnt;
+})
+
+function Dropdown() {
+  const menu = document.getElementById('dropdownMenu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
 // 댓글 수 초기화는 0으로 해야되는데 html에 더미 댓글 하나 있어서
 // 초기 세팅을 1로 설정해뒀습니다~
 // 나중에 바꿔주시면 됩니다!
@@ -29,7 +70,7 @@ function addComment() {
 
     // 댓글 작성자
     const commmentAuthor = document.createElement('span');
-    commmentAuthor.classList.add('lch-tipDetail-commnet-author');
+    commmentAuthor.classList.add('lch-tipDetail-comment-author');
     commmentAuthor.textContent = "3inch 임초현🏅"; // 나중에 불러오는거 여기 추가
 
     // 댓글 (진짜)
@@ -57,8 +98,10 @@ function addComment() {
 
     // 모니터 수
     const commentMonitorNum = document.createElement('span');
-    commentMonitorNum.classList.add('lch-tipDetail-comment-monitor-num');
+    //tipDetail-comment-monitor-num
+    commentMonitorNum.setAttribute('id', 'tipDetail-comment-monitor-num');
     commentMonitorNum.textContent = " 24"; // 나중에 불러오는거 여기 추가
+    
 
     //모니터 이미지
     const monitorImg = document.createElement('img');
