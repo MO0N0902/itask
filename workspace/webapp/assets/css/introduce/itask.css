@@ -12,7 +12,7 @@ header {
 }
 
 /* main 영역 */
-.itaskBox {
+.itAskBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -54,6 +54,16 @@ header {
   cursor: pointer;
 }
 
+/* 버튼 밖에 a 태그 사용하는 방법 */
+.bjs-itask-category-btn>a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: black; 
+  padding-top:5px;
+}
+
 /* 회원가입 태그 */
 .bjs-itask-tag {
   display: flex;
@@ -74,6 +84,12 @@ header {
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s ease; /* 마우스 오버시 0.3초 동안 */
+}
+
+.bjs-itask-tag-btn>a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
 }
 
 /* 마우스 오버시 조금 커지게 */
